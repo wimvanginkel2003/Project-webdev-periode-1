@@ -19,21 +19,26 @@ header {
     background-color: black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 main {
     grid-area: main;
-    background-color: blue;
+    background-color: white;
 }
 
 footer {
     grid-area: footer;
-    background-color: brown;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 
-/*Menu van de website*/
+/* Navigatie  van de website*/
+
 header nav {
     display: flex;
     flex-direction: row;
@@ -75,5 +80,51 @@ header nav ul li a {
     border-radius: 5px;
     color: white;
 }
+
+/* Footer van de website */
+
+footer .Sectioncoypright {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    height: 100%;
+    padding-left: 1%;
+}
+
+footer .Sectionsocialknoppen {
+    display: flex;
+    width: 9%;
+    font-size: 270%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Formule = width en groot genog font-size hebben*/
+@media (min-width: 700px) and (max-width: 1024px) {
+    footer .Sectionsocialknoppen {
+        width: 10%;
+        background-color: hotpink;
+        font-size: 250%;
+    }
+}
+
+/*Formule = width en groot genog font-size hebben*/
+@media (min-width: 0px) and (max-width: 700px) {
+    footer .Sectionsocialknoppen {
+        width: 11%;
+        background-color: hotpink;
+        font-size: 120%;
+    }
+}
+
+
+
+footer a i {
+    color: white;
+}
+
 
 
