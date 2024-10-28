@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'Impact', sans-serif;
 }
 
 /*Structuur voor de layouts secties */
@@ -12,6 +13,15 @@ Body {
     Grid-template-areas: "header" "main" "footer";
     min-height: 100vh;
 }
+
+/* media q die zorgt voor tablets*/
+@media (min-width: 400px) and (max-width: 600px) {
+    .Body {
+       max-height: unset;
+    }
+}
+
+
 
 /*Layout secties */
 header {
@@ -119,10 +129,186 @@ footer .Sectionsocialknoppen {
 }
 
 
-
 footer a i {
     color: white;
 }
 
 
+
+/*Homepage*/
+
+.mainblack {
+    border: solid green 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*color: white;*/
+    /*background-color: black;*/
+}
+
+
+.Links {
+    border: solid #00ffc4 6px;
+    width: 410px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* media q die zorgt voor telefoon*/
+@media (min-width: 400px) and (max-width: 600px) {
+    .Links {
+        width: 220px;
+        justify-content: start;
+    }
+}
+
+
+
+/* media q die zorgt voor tablets*/
+@media (min-width: 715px) and (max-width: 1024px) {
+    .Links {
+        width: 320px;
+    }
+}
+
+/* media q ipad air*/
+@media (min-width: 600px) and (max-width: 715px) {
+    .Links {
+        width: 240px;;
+    }
+}
+
+.ArticlLinks {
+    border: solid #ff001e 6px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 1000%;
+}
+
+/* media q die zorgt voor telefoon*/
+@media (min-width: 400px) and (max-width: 600px) {
+    .ArticlLinks {
+        font-size: 500%;
+        height: 25%;
+    }
+}
+
+/* media q die zorgt voor tablets*/
+@media (min-width: 715px) and (max-width: 1024px) {
+    .ArticlLinks {
+        font-size: 700%;
+    }
+}
+
+/* media q ipad air*/
+@media (min-width: 600px) and (max-width: 715px) {
+    .ArticlLinks {
+        font-size: 500%;
+    }
+}
+
+
+.Rechts {
+    border: solid #00ffff 5px;
+    width: 570px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+/* media q die zorgt voor tablets*/
+@media (min-width: 400px) and (max-width: 600px) {
+    .Rechts {
+        flex-direction: column-reverse;
+        width: unset;
+    }
+}
+
+
+/* media q die zorgt voor tablets*/
+@media (min-width: 715px) and (max-width: 1024px) {
+    .Rechts {
+        width: 380px;
+    }
+}
+
+
+
+/* media q ipad air*/
+@media (min-width: 600px) and (max-width: 715px) {
+    .Rechts {
+        width: 370px;;
+    }
+}
+
+
+.ClassKnop a {
+    border: #0037ff solid 3px;
+    color: #00ff04;
+    border-radius: 5px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+/* media q ipad air*/
+@media (min-width: 715px) and (max-width: 1024px) {
+    .ClassKnop  a  {
+        width: 50%;;
+    }
+}
+
+/* media q ipad air*/
+@media (min-width: 600px) and (max-width: 715px) {
+    .ClassKnop  a  {
+        width: 50%;;
+    }
+}
+
+
+.articlecontent {
+    border: solid #00ff04 6px;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.ClassSlogan {
+    border: solid #ee00ff 4px;
+    height: 50%;
+    display: flex;
+    font-size: 200%;
+    align-items: center;
+}
+
+.ClassKnop {
+    border: solid rebeccapurple 4px;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.articleX {
+    border: solid #ff0099 6px;
+    height: 50%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    font-size: 1400%;
+    justify-content: center;
+}
+
+/* media q die zorgt voor tablets*/
+@media (min-width: 400px) and (max-width: 600px) {
+    .articleX {
+        justify-content: start;
+        width: 25%;
+    }
+}
 
