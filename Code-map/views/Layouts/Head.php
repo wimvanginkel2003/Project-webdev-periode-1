@@ -20,7 +20,9 @@
         <!-- Helpt de browser begrijpen wat de schermgrote is-->
         <meta name="viewport" content="with=device, initial-scale=1.0">
 
+        <link rel="stylesheet" href="/Code-map/views/CSS/Webcsshoofdmap.css">
     </head>
+
 <body>
 </html>
 
