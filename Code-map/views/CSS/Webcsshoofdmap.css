@@ -14,7 +14,6 @@ Body {
 }
 
 /*Layout secties */
-
 header {
     grid-area: header;
     background-color: black;
@@ -34,6 +33,47 @@ footer {
 
 
 
+/*Menu van de website*/
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 50%;
+}
 
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    header nav ul {
+        width: 90%;;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 700px){
+    header nav ul {
+        width: 100%;;
+    }
+}
+
+header nav ul li {
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header nav ul li a {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    border: white solid;
+    border-radius: 5px;
+    color: white;
+}
 
 
