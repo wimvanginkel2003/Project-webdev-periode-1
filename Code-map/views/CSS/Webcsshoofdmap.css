@@ -14,14 +14,6 @@ Body {
     min-height: 100vh;
 }
 
-/* media q die zorgt voor tablets*/
-@media (min-width: 400px) and (max-width: 600px) {
-    .Body {
-       max-height: unset;
-    }
-}
-
-
 
 /*Layout secties */
 header {
@@ -128,6 +120,14 @@ footer .Sectionsocialknoppen {
     }
 }
 
+/* Telefoons overdwars*/
+@media (min-width: 660px) and (max-height: 450px){
+    footer .Sectionsocialknoppen {
+        font-size: 150%;
+    }
+}
+
+
 
 footer a i {
     color: white;
@@ -138,177 +138,333 @@ footer a i {
 /*Homepage*/
 
 .mainblack {
-    border: solid green 6px;
+    /*border: solid green 6px;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*color: white;*/
-    /*background-color: black;*/
+    color: white;
+    background-color: black;
+}
+
+/* media q  grote telefoons*/
+@media (min-width: 0px) and (max-width: 645px) {
+    .mainblack {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
 .Links {
-    border: solid #00ffc4 6px;
+    /*border: solid #00ffc4 6px;*/
     width: 410px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-/* media q die zorgt voor telefoon*/
-@media (min-width: 400px) and (max-width: 600px) {
-    .Links {
-        width: 220px;
-        justify-content: start;
-    }
-}
 
-
-
-/* media q die zorgt voor tablets*/
-@media (min-width: 715px) and (max-width: 1024px) {
+/* media q  ipad/tablets*/
+@media (min-width: 730px) and (max-width: 1024px) {
     .Links {
         width: 320px;
     }
 }
 
-/* media q ipad air*/
-@media (min-width: 600px) and (max-width: 715px) {
+/* media q mini ipad/tablet*/
+@media (min-width: 645px) and (max-width: 730px) {
     .Links {
-        width: 240px;;
+        width: 240px;
     }
 }
 
+/* media q  grote telefoons*/
+@media (min-width: 0px) and (max-width: 645px) {
+    .Links{
+        width: max-content;
+    }
+}
+
+
+
 .ArticlLinks {
-    border: solid #ff001e 6px;
+    /*border: solid #ff001e 6px;*/
     height: 50%;
     display: flex;
     align-items: center;
     font-size: 1000%;
 }
 
-/* media q die zorgt voor telefoon*/
-@media (min-width: 400px) and (max-width: 600px) {
-    .ArticlLinks {
-        font-size: 500%;
-        height: 25%;
-    }
-}
 
-/* media q die zorgt voor tablets*/
-@media (min-width: 715px) and (max-width: 1024px) {
+/* media q  ipad/tablets*/
+@media (min-width: 730px) and (max-width: 1024px) {
     .ArticlLinks {
         font-size: 700%;
     }
 }
 
-/* media q ipad air*/
-@media (min-width: 600px) and (max-width: 715px) {
+
+
+/* media q mini ipad/tablet*/
+@media (min-width: 645px) and (max-width: 730px) {
     .ArticlLinks {
         font-size: 500%;
     }
 }
 
 
+
+/* media q  grote telefoons*/
+@media (min-width: 400px) and (max-width: 645px) {
+    .ArticlLinks {
+        height: auto;
+        font-size: 600%;
+        width: max-content;
+    }
+}
+
+/* media q Surface Duo*/
+@media (min-width: 535px) and (max-width: 545px) and  (max-height: 725px) {
+    .ArticlLinks {
+        font-size: 450%;
+    }
+}
+
+/* media q  kleine telefoons*/
+@media (min-width: 0px) and (max-width: 400px) {
+    .ArticlLinks {
+        height: auto;
+        font-size: 400%;
+        width: max-content;
+    }
+}
+
+/* Telefoons overdwars*/
+@media (min-width: 670px) and (max-height: 450px){
+    .ArticlLinks {
+        height: auto;
+        font-size: 400%;
+    }
+}
+
+
+
 .Rechts {
-    border: solid #00ffff 5px;
+    /*border: solid #00ffff 5px;*/
     width: 570px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
 }
 
-/* media q die zorgt voor tablets*/
-@media (min-width: 400px) and (max-width: 600px) {
-    .Rechts {
-        flex-direction: column-reverse;
-        width: unset;
-    }
-}
 
-
-/* media q die zorgt voor tablets*/
-@media (min-width: 715px) and (max-width: 1024px) {
+/* media q ipad/tablets*/
+@media (min-width: 730px) and (max-width: 1024px) {
     .Rechts {
         width: 380px;
     }
 }
 
 
-
-/* media q ipad air*/
-@media (min-width: 600px) and (max-width: 715px) {
+/* media q mini ipad/tablet*/
+@media (min-width: 645px) and (max-width: 730px) {
     .Rechts {
-        width: 370px;;
+        width: 370px;
     }
 }
 
-
-.ClassKnop a {
-    border: #0037ff solid 3px;
-    color: #00ff04;
-    border-radius: 5px;
-    width: 25%;
-    display: flex;
-    justify-content: center;
-}
-
-/* media q ipad air*/
-@media (min-width: 715px) and (max-width: 1024px) {
-    .ClassKnop  a  {
-        width: 50%;;
+/* media q  grote telefoons*/
+@media (min-width: 0px) and (max-width: 645px) {
+    .Rechts {
+        width: auto;
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: flex-end;
     }
 }
 
-/* media q ipad air*/
-@media (min-width: 600px) and (max-width: 715px) {
-    .ClassKnop  a  {
-        width: 50%;;
+/* Telefoons overdwars*/
+@media (min-width: 660px) and (max-height: 450px){
+    .Rechts {
+        justify-content: center;
+        height: auto;
     }
 }
 
 
 .articlecontent {
-    border: solid #00ff04 6px;
+    /*border: solid #00ff04 6px;*/
     height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
+/* media q  grote telefoons*/
+@media (min-width: 400px) and (max-width: 645px) {
+    .articlecontent {
+        justify-content: space-between;
+        height: auto;
+    }
+}
+
+
+/* media q  kleine telefoons*/
+@media (min-width: 0px) and (max-width: 400px){
+    .articlecontent {
+        justify-content: space-between;
+        height: auto;
+    }
+}
+
+/* Telefoons overdwars*/
+@media (min-width: 660px) and (max-height: 450px){
+    .articlecontent {
+        height: auto;
+    }
+}
+
 
 .ClassSlogan {
-    border: solid #ee00ff 4px;
+    /*border: solid #ee00ff 4px;*/
     height: 50%;
     display: flex;
     font-size: 200%;
     align-items: center;
 }
 
+/* media q  grote telefoons*/
+@media (min-width: 400px) and (max-width: 645px) {
+    .ClassSlogan {
+        height:auto;
+        padding-left: 10px;
+        justify-content: center;
+    }
+}
+
+/* media q  kleine telefoons*/
+@media (min-width: 0px) and (max-width: 400px) {
+    .ClassSlogan {
+        height:auto;
+        font-size: 150%;
+        padding-left: 10px;
+    }
+}
+
+/* Telefoons overdwars*/
+@media (min-width: 660px) and (max-height: 450px){
+    .ClassSlogan {
+        height: auto;
+        font-size: 100%;
+    }
+}
+
 .ClassKnop {
-    border: solid rebeccapurple 4px;
+    /*border: solid rebeccapurple 4px;*/
     height: 30%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* media q  grote telefoons*/
+@media (min-width: 400px) and (max-width: 645px) {
+    .ClassKnop {
+        border: none;
+    }
+}
+
+/* Telefoons overdwars*/
+@media (min-width: 660px) and (max-height: 450px){
+    .ClassKnop {
+        height: auto;
+    }
+}
+
+.ClassKnop a {
+    border: white solid 3px;
+    color: white;
+    border-radius: 5px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+/* media q  ipad/tablets*/
+@media (min-width: 730px) and (max-width: 1024px) {
+    .ClassKnop  a  {
+        width: 50%;;
+    }
+}
+
+
+/* media q mini ipad/tablet*/
+@media (min-width: 645px) and (max-width: 730px) {
+    .ClassKnop  a  {
+        width: 50%;;
+    }
+}
+
+/* media q  grote telefoons*/
+@media (min-width: 400px) and (max-width: 645px) {
+    .ClassKnop a {
+        font-size: 200%;
+        width: auto;
+    }
+}
+
+/* media q  kleine telefoons*/
+@media (min-width: 0px) and (max-width: 400px) {
+    .ClassKnop a {
+        font-size: 150%;
+        width: auto;
+    }
+}
 
 .articleX {
-    border: solid #ff0099 6px;
+    /*border: solid #ff0099 6px;*/
     height: 50%;
     display: flex;
     width: 50%;
     align-items: center;
-    font-size: 1400%;
+    font-size: 1200%;
     justify-content: center;
 }
 
-/* media q die zorgt voor tablets*/
-@media (min-width: 400px) and (max-width: 600px) {
+
+
+/* media q  grote telefoons*/
+@media (min-width: 400px) and (max-width: 645px){
     .articleX {
-        justify-content: start;
-        width: 25%;
+        height: auto;
+        font-size: 800%;
     }
 }
+
+/* media q  Surface Duo*/
+@media (min-width: 400px) and (max-width: 645px) and (max-height: 725px) {
+    .articleX {
+        height: auto;
+        font-size: 450%;
+    }
+}
+
+/* media q  kleine telefoons*/
+@media (min-width: 0px) and (max-width: 400px){
+    .articleX {
+        height: auto;
+        font-size: 500%;
+    }
+}
+
+/* Telefoons overdwars*/
+@media (min-width: 660px) and (max-height: 450px){
+    .articleX {
+        height: auto;
+        font-size: 400%;
+    }
+}
+
 
