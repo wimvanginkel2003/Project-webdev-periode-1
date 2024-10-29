@@ -38,10 +38,10 @@ footer {
 }
 
 
-
 /* Navigatie  van de website*/
 
 header nav {
+    /*border: #0037ff solid 2px;*/
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -49,6 +49,7 @@ header nav {
 }
 
 header nav ul {
+    /*border: #00ffff solid 2px;*/
     display: flex;
     flex-direction: row;
     width: 70%;
@@ -61,13 +62,9 @@ header nav ul {
     }
 }
 
-@media (min-width: 600px) and (max-width: 700px){
-    header nav ul {
-        width: 100%;;
-    }
-}
 
 header nav ul li {
+    /*border: #ff001e solid 2px;*/
     width: 25%;
     display: flex;
     justify-content: start;
@@ -78,10 +75,11 @@ header nav ul li a {
     display: flex;
     width: 80%;
     justify-content: center;
-    border: white solid;
+    border: White solid;
     border-radius: 5px;
     color: white;
 }
+
 
 /* Footer van de website */
 
@@ -467,4 +465,56 @@ footer a i {
     }
 }
 
+/*over ons*/
+
+.fake {
+    border: rebeccapurple 2px solid;
+}
+
+.Paginatitelcontainer {
+    border: rebeccapurple 2px solid;
+    display: flex;
+    height: 15%;
+    justify-content: center;
+}
+
+.Paginasectie {
+    border: rebeccapurple 2px solid;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    font-size: 200%;
+}
+
+.Contentcontainer {
+    border: #00ffff 2px solid;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+}
+
+.Fotocontainer {
+    border: rebeccapurple 2px solid;
+    width: 40%;
+}
+
+.Textcontainer {
+    border: rebeccapurple 2px solid;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Spectext {
+    border: rebeccapurple 2px solid;
+    display: flex;
+}
+
+.Knoppencontainer {
+    border: rebeccapurple 2px solid;
+    display: flex;
+    flex-direction: row;
+}
 
