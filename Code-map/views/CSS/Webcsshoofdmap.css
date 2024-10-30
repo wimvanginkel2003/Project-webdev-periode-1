@@ -12,6 +12,7 @@ Body {
     Grid-template-rows: 0.1fr 0.8fr 0.1fr;
     Grid-template-areas: "header" "main" "footer";
     min-height: 100vh;
+
 }
 
 
@@ -616,7 +617,6 @@ footer a i {
     }
 }
 
-
 .maincontact {
     display: flex;
     flex-direction: column;
@@ -736,6 +736,144 @@ footer a i {
     border-radius: 5px;
     padding: 5px;
     font-size: 120%;
+}
+
+/*portfolio overzicht*/
+
+.mainportfolio {
+    /*border: #ff001e solid 5px;*/
+    overflow: auto;
+}
+
+.sectionpaginatitel {
+    height: 15%;
+    /*border: #ff001e solid 5px;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .sectionpaginatitel {
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+.articlepaginatitel {
+    /*border: #ff001e solid 5px;*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: max-content;
+
+}
+
+.contentsection {
+    /*border: #ff0099 solid 5px;*/
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .contentsection {
+       flex-direction: column;
+        height: auto;
+    }
+}
+
+
+.sectionfilterknop {
+    /*border: #ff001e solid 5px;*/
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .sectionfilterknop {
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+
+.sectionarticleproject {
+    /*border: #ff001e solid 5px;*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .sectionarticleproject {
+        width: auto;
+        padding-top: 10px;
+    }
+}
+
+
+.articleproject {
+    border: black solid 3px;
+    width: 80%;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.titelproject {
+    /*border: black solid 3px;*/
+    height: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.knopnaarprojectspan {
+    height: 30%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.knopinfo {
+    border: black solid 3px;
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+}
+
+.sectioncontactknop {
+    /*border: #ff001e solid 5px;*/
+    width: 15%;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .sectioncontactknop {
+        height: auto;
+        width: auto;
+        padding-top: 10px
+    }
+}
+
+.articleknopcont {
+    /*border: #ff001e solid 3px;*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.knopcontactpag {
+    border: black solid 3px;
+    border-radius: 3px;
+    color: black;
+    padding: 5px;
 }
 
 
