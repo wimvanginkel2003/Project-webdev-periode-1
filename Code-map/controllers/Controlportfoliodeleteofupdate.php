@@ -1,10 +1,9 @@
 <?php
 $paginatitel = "Project verwijderen of updaten admin| ProcodeX";
 
-require "../views/Layouts/Head.php";
-require "../views/Layouts/Header.html";
-require "../views/Layouts/Main.html";
-require "../views/Layouts/updateofdelete.html";
-require "../views/Layouts/Footer.html";
+require __DIR__ . '/../views/Layouts/Head.php';
+require __DIR__ . '/../views/Layouts/Header.html';
+require __DIR__ . '/../views/Layouts/updateofdelete.html';
+require __DIR__ . '/../views/Layouts/Footer.html';
 
 ?>

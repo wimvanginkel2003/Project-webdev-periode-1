@@ -1,9 +1,10 @@
 <?php
+
 $paginatitel = "ProcodeX";
 
-require "../views/Layouts/Head.php";
-require "../views/Layouts/Header.html";
-require "../views/Layouts/Homepage.html";
-require "../views/Layouts/Footer.html";
+require __DIR__ . '/../views/Layouts/Head.php';
+require __DIR__ . '/../views/Layouts/Header.html';
+require __DIR__ . '/../views/Layouts/Homepage.html';
+require __DIR__ . '/../views/Layouts/Footer.html';
 
 ?>
