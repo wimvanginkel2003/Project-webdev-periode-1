@@ -2,12 +2,15 @@
 
 $paginatitel = "Project aanmaak beheer admin| ProcodeX";
 
+
+require __DIR__ . '/DBverbinding.php';
+
 require __DIR__ . '/../views/Layouts/Head.php';
 require __DIR__ . '/../views/Layouts/Header.html';
 require __DIR__ . '/../views/Layouts/Aanmakenportfolio.html';
 require __DIR__ . '/../views/Layouts/Footer.html';
 
-require __DIR__ . '/DBverbinding.php';
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $titelpagina = $_POST["titelpagina"];
@@ -17,9 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $afbeelding3 = $_POST["afbeelding3"];
     $afbeelding4 = $_POST["afbeelding4"];
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "wachtwoord";
+    
 
     $stmt = $conn->prepare("INSERT INTO Portfolio_projecten (Paginatitel, Projectitel, Afbeelding1, Afbeelding2, Afbeelding3, Afbeelding4) VALUES (:Paginatitel, :Projectitel, :Afbeelding1, :Afbeelding2, :Afbeelding3, :Afbeelding4)");
     $stmt->bindParam(':Paginatitel', $titelpagina);
