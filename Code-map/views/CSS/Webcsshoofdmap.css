@@ -1028,7 +1028,7 @@ footer a i {
     align-items: flex-end;
 }
 
-.articlepaginatitel {
+.articlepaginatiteldetail {
     border: #ff0099 2px solid;
 }
 
@@ -1126,4 +1126,128 @@ footer a i {
 .pubdatum {
     border: green solid 2px;
     width: max-content;
+}
+
+
+/* Portfoliobeheerpagina*/
+
+.mainportfoliobeheer {
+    /*border: #ff001e solid 5px;*/
+    overflow: auto;
+}
+
+.sectionpaginatitelbeheer {
+    height: 15%;
+    /*border: #ff001e solid 5px;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .sectionpaginatitelbeheer {
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+.articlepaginatitelbeheer {
+    /*border: #ff001e solid 5px;*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: max-content;
+
+}
+
+.contentsectionbeheer {
+    /*border: #ff0099 solid 5px;*/
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .contentsectionbeheer {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
+.sectionarticleprojectbeheer {
+    /*border: #00ffff solid 5px;*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .sectionarticleprojectbeheer {
+        width: auto;
+        padding-top: 10px;
+    }
+}
+
+
+.articleprojectbeheer {
+    border: black solid 3px;
+    width: 80%;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    /*border: #ff001e solid 4px;*/
+}
+
+.titelprojectbeheer {
+    /*border: black solid 3px;*/
+    height: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.knopnaarprojectspanbeheer {
+    height: 30%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.knopinfobeheer {
+    border: black solid 3px;
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+}
+
+.sectionnieuwprojectbeheer {
+    /*border: #ff001e solid 5px;*/
+    width: auto;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .sectionnieuwprojectbeheer {
+        height: auto;
+        width: auto;
+        padding-top: 10px
+    }
+}
+
+.articlenieuwprojectbeheer {
+    /*border: #ff001e solid 3px;*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.knopnieuwprojecpag {
+    border: black solid 3px;
+    border-radius: 3px;
+    color: black;
+    padding: 5px;
 }
