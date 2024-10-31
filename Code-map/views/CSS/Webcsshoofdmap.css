@@ -880,7 +880,7 @@ footer a i {
 /*create project*/
 
 .mainaanmakenproject {
-    /*border: #ff0099 solid 2px;*/
+    border: #ff0099 solid 2px;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
@@ -892,10 +892,11 @@ footer a i {
 }
 
 .algemenesectie {
-    /*border: #00ff04 solid 5px;*/
+    border: #00ff04 solid 5px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    height: 80%;
+    height: 90%;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
@@ -907,7 +908,7 @@ footer a i {
 }
 
 .invulveldentexten {
-    /*border: #ff0099 solid 5px;*/
+    border: #ff0099 solid 5px;
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -1129,7 +1130,7 @@ footer a i {
 }
 
 
-/* Portfoliobeheerpagina*/
+ Portfoliobeheerpagina
 
 .mainportfoliobeheer {
     /*border: #ff001e solid 5px;*/

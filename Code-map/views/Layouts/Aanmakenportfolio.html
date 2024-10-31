@@ -1,63 +1,66 @@
 <!doctype html>
 <html>
+
 <main class="mainaanmakenproject">
 
-    <div class="algemenesectie">
-
-        <section class="invulveldentexten">
-
-            <!-- pagina titel invullen -->
-            <input class="invulpaginanaam" type="text" placeholder="Vul hier de pagina titel in">
 
 
-            <!-- Toelichting op project-->
-            <textarea class="grootinvulveld" placeholder="Schrijf hier je artikel"></textarea>
+            <form class="algemenesectie" action="/Code-map/controllers/Controlaanmakenportfolio.php" method="post" >
 
-            <article class="containerdatum" >
+            <section class="invulveldentexten">
 
-                <!-- Publicatie datum invoeren -->
-                <label>Publicatiedatum</label>
+                <!-- pagina titel invullen -->
+                <input class="invulpaginanaam" type="text" placeholder="Vul hier de pagina titel in" name="titelpagina">
 
-                <input type="date" placeholder="Vul hier de publicatiedatum in">
 
-            </article>
+                <!-- Toelichting op project-->
+                <textarea class="grootinvulveld" placeholder="Schrijf hier je artikel" name="Projectbeschrijving"></textarea>
+
+                <article class="containerdatum" name="Projectbeschrijving" >
+
+                    <!-- Publicatie datum invoeren -->
+                    <label>Publicatiedatum</label>
+
+                    <input type="date" placeholder="Vul hier de publicatiedatum in" name="publicatiedatum">
+
+                </article>
+            </section>
+
+
+            <section class="toevoegenafbeeldingen">
+
+                <article class="sectionafbeeldingentoe">
+
+                    <span class="titelproject">
+                    <h3> Afbeeldingen van het project</h3>
+                    </span>
+
+                    <span class="inputafbeeldingen">
+                        <!-- Afbeelding ter toelichting op  -->
+                        <input class="inputbestanden" type="file" accept="image/*" name="afbeelding1">
+
+                        <!-- Afbeelding ter toelichting op  -->
+                        <input class="inputbestanden" type="file" accept="image/*" name="afbeelding2">
+
+                        <!-- Afbeelding ter toelichting op  -->
+                        <input class="inputbestanden" type="file" accept="image/*" name="afbeelding3">
+
+                        <!-- Afbeelding ter toelichting op  -->
+                        <input class="inputbestanden" type="file" accept="image/*" name="afbeelding4">
+                    </span>
+
+                </article>
+
+            </section>
+
+            <section class="projectopslaan">
+                <article class="knopcontainer">
+                <!-- Bestanden worden opgeslagen -->
+                    <input class="knopop" type="submit" value="Opslaan">
+                </article>
         </section>
 
-
-        <section class="toevoegenafbeeldingen">
-
-            <article class="sectionafbeeldingentoe">
-
-                <span class="titelproject">
-                <h3> Afbeeldingen van het project</h3>
-                </span>
-
-                <span class="inputafbeeldingen">
-                    <!-- Afbeelding ter toelichting op  -->
-                    <input class="inputbestanden" type="file" name="afbeelding" accept="image/*">
-
-                    <!-- Afbeelding ter toelichting op  -->
-                    <input class="inputbestanden" type="file" name="afbeelding" accept="image/*">
-
-                    <!-- Afbeelding ter toelichting op  -->
-                    <input class="inputbestanden" type="file" name="afbeelding" accept="image/*">
-
-                    <!-- Afbeelding ter toelichting op  -->
-                    <input class="inputbestanden" type="file" name="afbeelding" accept="image/*">
-                </span>
-
-            </article>
-
-        </section>
-
-        <section class="projectopslaan">
-            <article class="knopcontainer">
-            <!-- Bestanden worden opgeslagen -->
-                <input class="knopop" type="submit" value="Opslaan">
-            </article>
-        </section>
-
-    </div>
+        </form>
 
 </main>
 </html>
