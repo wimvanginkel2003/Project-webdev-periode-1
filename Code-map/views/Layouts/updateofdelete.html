@@ -1,37 +1,97 @@
 <!doctype html>
 <html>
-<main>
+<!--<main>-->
 
-    <section>
+<!--    <section>-->
 
-        <!-- pagina titel invullen -->
-        <input type="text" placeholder="Vul hier de pagina titel in">
+<!--        &lt;!&ndash; pagina titel invullen &ndash;&gt;-->
+<!--        <input type="text" placeholder="Vul hier de pagina titel in">-->
 
-        <!-- Toelichting op project-->
-        <input type="text" placeholder="Vul hier de project beschrijving in">
+<!--        &lt;!&ndash; Toelichting op project&ndash;&gt;-->
+<!--        <input type="text" placeholder="Vul hier de project beschrijving in">-->
 
-        <!-- Publicatie datum invoeren -->
-        <input type="date" placeholder="Vul hier de publicatiedatum in">
+<!--        &lt;!&ndash; Publicatie datum invoeren &ndash;&gt;-->
+<!--        <input type="date" placeholder="Vul hier de publicatiedatum in">-->
 
-        <!-- Afbeelding ter toelichting op  -->
-        <input type="image" alt="Voeg afbeelding toe van project">
+<!--        &lt;!&ndash; Afbeelding ter toelichting op  &ndash;&gt;-->
+<!--        <input type="image" alt="Voeg afbeelding toe van project">-->
 
-        <!-- Afbeelding ter toelichting op  -->
-        <input type="image" alt="Voeg afbeelding toe van project">
+<!--        &lt;!&ndash; Afbeelding ter toelichting op  &ndash;&gt;-->
+<!--        <input type="image" alt="Voeg afbeelding toe van project">-->
 
-        <!-- Afbeelding ter toelichting op  -->
-        <input type="image" alt="Voeg afbeelding toe van project">
+<!--        &lt;!&ndash; Afbeelding ter toelichting op  &ndash;&gt;-->
+<!--        <input type="image" alt="Voeg afbeelding toe van project">-->
 
-        <!-- Afbeelding ter toelichting op  -->
-        <input type="image" alt="Voeg afbeelding toe van project">
+<!--        &lt;!&ndash; Afbeelding ter toelichting op  &ndash;&gt;-->
+<!--        <input type="image" alt="Voeg afbeelding toe van project">-->
 
-        <!-- Project verwijderd -->
-        <input type="submit" value="Verwijderen">
+<!--        &lt;!&ndash; Project verwijderd &ndash;&gt;-->
+<!--        <input type="submit" value="Verwijderen">-->
 
-        <!-- Bestanden worden geupdate -->
-        <input type="submit" value="Updaten">
+<!--        &lt;!&ndash; Bestanden worden geupdate &ndash;&gt;-->
+<!--        <input type="submit" value="Updaten">-->
 
-    </section>
+<!--    </section>-->
+
+<!--</main>-->
+<main class="mainaanmakenproject">
+
+    <div class="algemenesectie">
+
+        <section class="invulveldentexten">
+
+            <!-- pagina titel invullen -->
+            <input class="invulpaginanaam" type="text" placeholder="Vul hier de pagina titel in">
+
+
+            <!-- Toelichting op project-->
+            <textarea class="grootinvulveld" placeholder="Schrijf hier je artikel"></textarea>
+
+            <article class="containerdatum" >
+
+                <!-- Publicatie datum invoeren -->
+                <label>Publicatiedatum</label>
+
+                <input type="date" placeholder="Vul hier de publicatiedatum in">
+
+            </article>
+        </section>
+
+
+        <section class="toevoegenafbeeldingen">
+
+            <article class="sectionafbeeldingentoe">
+
+                <span class="titelproject">
+                <h3> Afbeeldingen van het project</h3>
+                </span>
+
+                <span class="inputafbeeldingen">
+                    <!-- Afbeelding ter toelichting op  -->
+                    <input class="inputbestanden" type="file" name="afbeelding" accept="image/*">
+
+                    <!-- Afbeelding ter toelichting op  -->
+                    <input class="inputbestanden" type="file" name="afbeelding" accept="image/*">
+
+                    <!-- Afbeelding ter toelichting op  -->
+                    <input class="inputbestanden" type="file" name="afbeelding" accept="image/*">
+
+                    <!-- Afbeelding ter toelichting op  -->
+                    <input class="inputbestanden" type="file" name="afbeelding" accept="image/*">
+                </span>
+
+            </article>
+
+        </section>
+
+        <section class="projectopslaan">
+            <article class="knopcontainer">
+                <!-- Bestanden worden opgeslagen -->
+                <input class="knopop" type="submit" value="Opslaan">
+            </article>
+        </section>
+
+    </div>
 
 </main>
 </html>
