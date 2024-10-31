@@ -9,7 +9,7 @@ try {
 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    echo "Verbinding succesvol!";
+//    echo "Verbinding succesvol!";
 
 } catch (PDOException $e) {
 
