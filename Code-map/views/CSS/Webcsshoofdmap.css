@@ -741,13 +741,13 @@ footer a i {
 /*portfolio overzicht*/
 
 .mainportfolio {
-    /*border: #ff001e solid 5px;*/
+    border: #ff001e solid 5px;
     overflow: auto;
 }
 
 .sectionpaginatitel {
     height: 15%;
-    /*border: #ff001e solid 5px;*/
+    border: #ff001e solid 5px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -761,7 +761,7 @@ footer a i {
 }
 
 .articlepaginatitel {
-    /*border: #ff001e solid 5px;*/
+    border: #ff001e solid 5px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -770,7 +770,7 @@ footer a i {
 }
 
 .contentsection {
-    /*border: #ff0099 solid 5px;*/
+    border: #ff0099 solid 5px;
     display: flex;
     justify-content: center;
     height: auto;
@@ -785,7 +785,7 @@ footer a i {
 
 
 .sectionfilterknop {
-    /*border: #ff001e solid 5px;*/
+    border: #ff001e solid 5px;
     width: auto;
     display: flex;
     justify-content: center;
@@ -801,7 +801,7 @@ footer a i {
 
 
 .sectionarticleproject {
-    /*border: #ff001e solid 5px;*/
+    border: #ff001e solid 5px;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -827,7 +827,7 @@ footer a i {
 }
 
 .titelproject {
-    /*border: black solid 3px;*/
+    border: black solid 3px;
     height: 60%;
     display: flex;
     align-items: center;
@@ -850,7 +850,7 @@ footer a i {
 }
 
 .sectioncontactknop {
-    /*border: #ff001e solid 5px;*/
+    border: #ff001e solid 5px;
     width: 15%;
 }
 
@@ -863,7 +863,7 @@ footer a i {
 }
 
 .articleknopcont {
-    /*border: #ff001e solid 3px;*/
+    border: #ff001e solid 3px;
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
@@ -877,7 +877,9 @@ footer a i {
 }
 
 
-/*create project*/
+/*create project*//*create project*//*create project*//*create project*//*create project*//*create project*/
+/*create project*//*create project*//*create project*//*create project*//*create project*//*create project*/
+/*create project*//*create project*//*create project*//*create project*//*create project*//*create project*/
 
 .mainaanmakenproject {
     border: #ff0099 solid 2px;
@@ -1130,30 +1132,33 @@ footer a i {
 }
 
 
- Portfoliobeheerpagina
+/*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
+/*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
+/*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
 
-.mainportfoliobeheer {
-    /*border: #ff001e solid 5px;*/
+
+.mainportfolio {
+    border: #00ffc4 solid 5px;
     overflow: auto;
 }
 
-.sectionpaginatitelbeheer {
-    height: 15%;
-    /*border: #ff001e solid 5px;*/
+.sectionpaginatitel {
+    height: 60px;
+    border: #ffd500 solid 5px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
 @media (min-width: 0px) and (max-width: 645px){
-    .sectionpaginatitelbeheer {
+    .sectionpaginatitel {
         height: auto;
         padding-top: 10px;
     }
 }
 
-.articlepaginatitelbeheer {
-    /*border: #ff001e solid 5px;*/
+.articlepaginatitel {
+    border: #ff001e solid 5px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -1161,23 +1166,39 @@ footer a i {
 
 }
 
-.contentsectionbeheer {
-    /*border: #ff0099 solid 5px;*/
+.contentsection {
+    border: #ff0099 solid 5px;
     display: flex;
     justify-content: center;
     height: auto;
 }
 
 @media (min-width: 0px) and (max-width: 645px){
-    .contentsectionbeheer {
+    .contentsection {
         flex-direction: column;
         height: auto;
     }
 }
 
 
-.sectionarticleprojectbeheer {
-    /*border: #00ffff solid 5px;*/
+.sectionfilterknop {
+    border: #00ff04 solid 5px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .sectionfilterknop {
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+
+.sectionarticleproject {
+    border: #0037ff solid 5px;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -1186,32 +1207,31 @@ footer a i {
 }
 
 @media (min-width: 0px) and (max-width: 645px){
-    .sectionarticleprojectbeheer {
+    .sectionarticleproject {
         width: auto;
         padding-top: 10px;
     }
 }
 
 
-.articleprojectbeheer {
+.articleproject {
     border: black solid 3px;
     width: 80%;
     height: 120px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    /*border: #ff001e solid 4px;*/
 }
 
-.titelprojectbeheer {
-    /*border: black solid 3px;*/
+.titelproject {
+    border: black solid 3px;
     height: 60%;
     display: flex;
     align-items: center;
     padding-left: 10px;
 }
 
-.knopnaarprojectspanbeheer {
+.knopnaarprojectspan {
     height: 30%;
     padding-right: 30px;
     display: flex;
@@ -1219,36 +1239,258 @@ footer a i {
     align-items: center;
 }
 
-.knopinfobeheer {
+.knopinfo {
     border: black solid 3px;
     border-radius: 5px;
     color: black;
     padding: 3px;
 }
 
-.sectionnieuwprojectbeheer {
-    /*border: #ff001e solid 5px;*/
-    width: auto;
+.sectioncontactknop {
+    border: #ff001e solid 5px;
+    width: 15%;
 }
 
 @media (min-width: 0px) and (max-width: 645px){
-    .sectionnieuwprojectbeheer {
+    .sectioncontactknop {
         height: auto;
         width: auto;
         padding-top: 10px
     }
 }
 
-.articlenieuwprojectbeheer {
-    /*border: #ff001e solid 3px;*/
+.articleknopcont {
+    border: #ff001e solid 3px;
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
 }
 
-.knopnieuwprojecpag {
+.knopcontactpag {
     border: black solid 3px;
     border-radius: 3px;
     color: black;
     padding: 5px;
+}
+
+
+/*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
+/*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
+/*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
+
+.Beheermainportfolio {
+    border: #ee00ff solid 5px;
+    overflow: auto;
+}
+
+.Beheersectionpaginatitel {
+    height: 60px;
+    border: #ff001e solid 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .Beheersectionpaginatitel {
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+.Beheerarticlepaginatitel {
+    border: #00ff04 solid 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: max-content;
+
+}
+
+.Beheercontentsection {
+    border: #00ffc4 solid 5px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .Beheercontentsection {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
+.Beheersectionarticleproject {
+    border: #ff001e solid 5px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .Beheersectionarticleproject {
+        width: auto;
+        padding-top: 10px;
+    }
+}
+
+
+.Beheerarticleproject {
+    border: black solid 3px;
+    width: 80%;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.Beheertitelproject {
+    border: black solid 3px;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.Beheerknopnaarprojectspan {
+    height: 30%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Beheerknopinfo {
+    border: black solid 3px;
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+}
+
+.Beheersectioncontactknop {
+    border: #ff001e solid 5px;
+    width: 15%;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .Beheersectioncontactknop {
+        height: auto;
+        width: auto;
+        padding-top: 10px
+    }
+}
+
+.Beheerarticleknopcont {
+    border: #ff001e solid 3px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.Beheerknopcontactpag {
+    border: black solid 3px;
+    border-radius: 3px;
+    color: black;
+    padding: 5px;
+}
+
+/*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*/
+/*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*/
+/*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*/
+
+.mainupdateproject {
+    border: #ff0099 solid 2px;
+}
+
+@media (min-width: 0px) and (max-width: 740px){
+    .mainupdateproject {
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.algemenesectieupdate {
+    border: #00ff04 solid 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 90%;
+}
+
+@media (min-width: 0px) and (max-width: 740px){
+    .algemenesectieupdate {
+        height: auto;
+        width: 95%;
+        flex-direction: column;
+    }
+}
+
+.Invulveldenupdate {
+    border: #ff0099 solid 5px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: space-around;
+}
+
+@media (min-width: 0px) and (max-width: 740px){
+    .Invulveldenupdate {
+        height: auto;
+        width: auto;
+    }
+}
+
+.Updatepaginanaam {
+    font-size: 150%;
+}
+
+@media (min-width: 0px) and (max-width: 740px){
+    .Updatepaginanaam {
+        margin-top: 5px;
+    }
+}
+
+.grootupdateveld {
+    height: 200px;
+}
+
+@media (min-width: 0px) and (max-width: 740px){
+    .grootupdateveld {
+        margin-top: 5px;
+    }
+}
+
+.containerdatumupdate {
+    margin-top: 5px;
+}
+
+
+
+.projectupdateofdelete {
+    border: #ff0099 solid 5px;
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 0px) and (max-width: 740px){
+    .projectopslaan {
+        width: auto;
+    }
+}
+
+.knopcontainer {
+    border: #ff0099 solid 5px;
+    margin-top: 5px;
+}
+
+.knopop {
+    width: 80px;
 }

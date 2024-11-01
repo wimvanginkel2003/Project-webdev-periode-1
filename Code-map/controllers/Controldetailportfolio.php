@@ -11,7 +11,7 @@ if (isset($params['id'])) {
 
 
 
-    $sql = ("SELECT Paginatitel, Projectitel, Afbeelding1, Afbeelding2, Afbeelding3, Afbeelding4 FROM Portfolio_projecten WHERE id = :id");
+    $sql = ("SELECT Paginatitel, Projectitel FROM Portfolio_projecten WHERE id = :id");
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':id', $id, PDO::PARAM_INT);
     $stmt->execute();

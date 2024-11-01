@@ -25,30 +25,6 @@
                 </article>
 
 
-                <article class="fotosectionproject">
-
-                    <span class="fotoproject">
-                        <!-- Foto van project -->
-                        <img class="Projectfotos" src="data:image/jpeg;base64,' . base64_encode($afbeelding1) . '" alt="Project foto">
-
-                        <!-- Foto van project -->
-                        <img class="Projectfotos" src="<?php echo htmlspecialchars($contentpagina['Afbeelding1']); ?>" alt="Project foto">
-
-                    </span>
-
-                    <span class="fotoproject">
-                        <!-- Foto van project -->
-                        <img class="Projectfotos" src=""<?php echo htmlspecialchars($contentpagina['Afbeelding3']); ?>" alt="Project foto">
-
-
-                        <!-- Foto van project -->
-                        <img class="Projectfotos" src="<?php echo htmlspecialchars($contentpagina['Afbeelding4']); ?>" alt="Project foto">
-
-                    </span>
-
-                </article>
-
-
 
                 <article class="sectionexinfo">
 
