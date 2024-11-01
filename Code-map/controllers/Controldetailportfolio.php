@@ -7,8 +7,6 @@ if (isset($params['id'])) {
 
     $id = (int)$params['id'];
 
-    var_dump(gettype($id));
-
 
 
     $sql = ("SELECT Paginatitel, Projectitel FROM Portfolio_projecten WHERE id = :id");
