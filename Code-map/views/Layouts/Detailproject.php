@@ -9,7 +9,7 @@
                 <article class="articlepaginatiteldetail">
 
                     <!-- pagina titel -->
-                    <h2>Naam van het project</h2>
+                    <h2><?php echo htmlspecialchars($contentpagina['Paginatitel']); ?></h2>
 
                 </article>
 
@@ -20,19 +20,7 @@
 
                 <!-- Verhaal over het proeject -->
                 <article class="Articleinfoproject">
-
-                        <p class="textvakproject">
-                            persoon die zojuist informatie heeft opgevraagd informeren over het vervolgproces                             persoon die zojuist informatie heeft opgevraagd informeren over het vervolgproces
-                            persoon die zojuist informatie heeft opgevraagd informeren over het vervolgproces
-                            persoon die zojuist informatie heeft opgevraagd informeren over het vervolgproces
-                            persoon die zojuist informatie heeft opgevraagd informeren over het vervolgproces
-                            persoon die zojuist informatie heeft opgevraagd informeren over het vervolgproces
-                            persoon die zojuist informatie heeft opgevraagd informeren over het vervolgproces
-                            persoon die zojuist informatie heeft opgevraagd informeren over het vervolgproces
-
-
-
-                        </p>
+                        <p class="textvakproject"> <?php echo htmlspecialchars($contentpagina['Projectitel']); ?> </p>
 
                 </article>
 
@@ -41,19 +29,20 @@
 
                     <span class="fotoproject">
                         <!-- Foto van project -->
-                        <img class="Projectfotos" src="/Code-map/views/afbeeldingen/Fotoweb1.png" alt="Project foto">
+                        <img class="Projectfotos" src="data:image/jpeg;base64,' . base64_encode($afbeelding1) . '" alt="Project foto">
 
                         <!-- Foto van project -->
-                        <img class="Projectfotos" src="/Code-map/views/afbeeldingen/Fotoweb2.png" alt="Project foto">
+                        <img class="Projectfotos" src="<?php echo htmlspecialchars($contentpagina['Afbeelding1']); ?>" alt="Project foto">
 
                     </span>
 
                     <span class="fotoproject">
                         <!-- Foto van project -->
-                        <img class="Projectfotos" src="/Code-map/views/afbeeldingen/Fotoweb3.png" alt="Project foto">
+                        <img class="Projectfotos" src=""<?php echo htmlspecialchars($contentpagina['Afbeelding3']); ?>" alt="Project foto">
+
 
                         <!-- Foto van project -->
-                        <img class="Projectfotos" src="/Code-map/views/afbeeldingen/Fotoweb4.png" alt="Project foto">
+                        <img class="Projectfotos" src="<?php echo htmlspecialchars($contentpagina['Afbeelding4']); ?>" alt="Project foto">
 
                     </span>
 

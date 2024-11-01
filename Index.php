@@ -3,7 +3,15 @@
 
 $request_Page = $_SERVER['REQUEST_URI'];
 
-switch ($request_Page) {
+$parsed_url = parse_url($request_Page);
+
+//uitzoeken //
+if (isset($parsed_url['query'])) {
+    parse_str($parsed_url['query'], $params);
+}
+
+
+switch ($parsed_url['path']) {
     default:
         require "Code-map/controllers/Controlhome.php";
         break;
