@@ -6,40 +6,67 @@
     font-family: Arial;
 }
 
-/*Structuur voor de layouts secties */
-Body {
-    display: grid;
-    Grid-template-rows: 0.1fr 0.8fr 0.1fr;
-    Grid-template-areas: "header" "main" "footer";
-    min-height: 100vh;
 
+
+
+/*Structuur voor de layouts secties: Header, Main en Footer */ /*Structuur voor de layouts secties: Header, Main en Footer */ /*Structuur voor de layouts secties: Header, Main en Footer */
+/*Structuur voor de layouts secties: Header, Main en Footer */ /*Structuur voor de layouts secties: Header, Main en Footer */ /*Structuur voor de layouts secties: Header, Main en Footer */
+/*Structuur voor de layouts secties: Header, Main en Footer */ /*Structuur voor de layouts secties: Header, Main en Footer */ /*Structuur voor de layouts secties: Header, Main en Footer */
+
+
+Body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
-/*Layout secties */
+/*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties */
+/*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties */
+/*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties *//*Layout secties */
+
+
 header {
-    grid-area: header;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 90px;
+    position: relative;
 }
 
 main {
     grid-area: main;
+    flex: 1;
     background-color: white;
 }
 
 footer {
-    grid-area: footer;
     display: flex;
+    height: 70px;
     background-color: black;
     justify-content: space-between;
     align-items: center;
 }
 
 
-/* Navigatie  van de website*/
+
+
+/* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/
+/* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/
+/* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/
+
+
+/*Navigatie in de header*/ /*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*/
+/*Navigatie in de header*/ /*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*/
+/*Navigatie in de header*/ /*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*/
+/*Navigatie in de header*/ /*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*/
+
+
+header .logoheader {
+    color: white;
+    margin-left: 10px;
+}
 
 header nav {
     /*border: #0037ff solid 2px;*/
@@ -49,27 +76,64 @@ header nav {
     width: 50%;
 }
 
+@media (min-width: 0px) and (max-width: 750px){
+    header nav    {
+        z-index: 1000;
+        width: 20%;
+        height: 90px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
 header nav ul {
-    /*border: #00ffff solid 2px;*/
+    /*border: #ff0099 solid 5px;*/
     display: flex;
     flex-direction: row;
     width: 70%;
     justify-content: space-evenly;
 }
 
-@media (min-width: 700px) and (max-width: 1024px) {
+@media (min-width: 750px) and (max-width: 1024px) {
     header nav ul {
         width: 90%;;
     }
 }
 
+@media (min-width: 0px) and (max-width: 750px) {
+    header nav ul {
+        display: none;
+        position: absolute;
+        width: 90%;
+        left: 0;
+        flex-direction: column;
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        background-color: black;
+    }
+}
+
 
 header nav ul li {
-    /*border: #ff001e solid 2px;*/
+    /*border: #ffd500 solid 2px;*/
     width: 25%;
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 750px) {
+    header nav ul li    {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        height: 100px;
+        /*background-color: black;*/
+    }
 }
 
 header nav ul li a {
@@ -81,8 +145,51 @@ header nav ul li a {
     color: white;
 }
 
+header nav ul li a:hover{
+    color: black;
+    background-color: white;
+}
 
-/* Footer van de website */
+@media (min-width: 0px) and (max-width: 750px) {
+    header nav ul li a   {
+        font-size: 300%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 750px) {
+    header nav ul.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Hamburger menu voor telefoon en klein tablets*//* Hamburger menu voor telefoon en klein tablets*/
+
+.hamburgermenu {
+    display: none;
+    padding-right: 5px;
+    font-size: 150%;
+    margin-top: 25px;
+}
+
+
+@media (min-width: 0px) and (max-width: 750px) {
+    .hamburgermenu {
+        display: block;
+        cursor: pointer;
+        color: white;
+        z-index: 1001;
+    }
+}
+
+
+
+
+/* Footer van de website *//* Footer van de website *//* Footer van de website *//* Footer van de website *//* Footer van de website *//* Footer van de website */
+/* Footer van de website *//* Footer van de website *//* Footer van de website *//* Footer van de website *//* Footer van de website *//* Footer van de website */
+/* Footer van de website *//* Footer van de website *//* Footer van de website *//* Footer van de website *//* Footer van de website *//* Footer van de website */
+
 
 footer .Sectioncoypright {
     display: flex;
@@ -104,7 +211,7 @@ footer .Sectionsocialknoppen {
 }
 
 /*Formule = width en groot genog font-size hebben*/
-@media (min-width: 700px) and (max-width: 1024px) {
+@media (min-width: 800px) and (max-width: 1024px) {
     footer .Sectionsocialknoppen {
         width: 10%;
         font-size: 250%;
@@ -112,12 +219,21 @@ footer .Sectionsocialknoppen {
 }
 
 /*Formule = width en groot genog font-size hebben*/
+@media (min-width: 650px) and (max-width: 800px) {
+    footer .Sectionsocialknoppen {
+        width: 11%;
+        font-size: 175%;
+    }
+}
+
+/*Formule = width en groot genog font-size hebben*/
 @media (min-width: 0px) and (max-width: 700px) {
     footer .Sectionsocialknoppen {
         width: 11%;
-        font-size: 120%;
+        font-size: 125%;
     }
 }
+
 
 /* Telefoons overdwars*/
 @media (min-width: 660px) and (max-height: 450px){
@@ -134,9 +250,13 @@ footer a i {
 
 
 
-/*Homepage*/
+/*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*/
+/*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*/
+/*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*//*Homepage*/
 
-.mainblack {
+
+
+.mainhome {
     /*border: solid green 6px;*/
     display: flex;
     flex-direction: row;
@@ -147,9 +267,9 @@ footer a i {
 
 /* media q  grote telefoons*/
 @media (min-width: 0px) and (max-width: 645px) {
-    .mainblack {
+    .mainhome {
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
     }
 }
@@ -248,7 +368,6 @@ footer a i {
 }
 
 
-
 .Rechts {
     /*border: solid #00ffff 5px;*/
     width: 570px;
@@ -303,17 +422,16 @@ footer a i {
 /* media q  grote telefoons*/
 @media (min-width: 400px) and (max-width: 645px) {
     .articlecontent {
-        justify-content: space-between;
-        height: auto;
+        justify-content: space-evenly;
+        height: 175px;
     }
 }
-
 
 /* media q  kleine telefoons*/
 @media (min-width: 0px) and (max-width: 400px){
     .articlecontent {
         justify-content: space-between;
-        height: auto;
+        height: 140px;
     }
 }
 
@@ -361,7 +479,7 @@ footer a i {
 
 .ClassKnop {
     /*border: solid rebeccapurple 4px;*/
-    height: 30%;
+    height: auto;
     width: auto;
     display: flex;
     align-items: center;
@@ -386,15 +504,24 @@ footer a i {
     border: white solid 3px;
     color: white;
     border-radius: 5px;
-    width: 25%;
+    font-size: 150%;
+    width: 75%;
+    height: 50px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    font-weight: bold;
+}
+
+.ClassKnop a:hover {
+    color: black;
+    background-color: white;
 }
 
 /* media q  ipad/tablets*/
 @media (min-width: 730px) and (max-width: 1024px) {
     .ClassKnop  a  {
-        width: 50%;;
+        width: 95%;;
     }
 }
 
@@ -402,7 +529,7 @@ footer a i {
 /* media q mini ipad/tablet*/
 @media (min-width: 645px) and (max-width: 730px) {
     .ClassKnop  a  {
-        width: 50%;;
+        width: 95%;;
     }
 }
 
@@ -410,7 +537,7 @@ footer a i {
 @media (min-width: 400px) and (max-width: 645px) {
     .ClassKnop a {
         font-size: 200%;
-        width: auto;
+        width: 95%;
     }
 }
 
@@ -418,7 +545,7 @@ footer a i {
 @media (min-width: 0px) and (max-width: 400px) {
     .ClassKnop a {
         font-size: 150%;
-        width: auto;
+        width: 95%;
     }
 }
 
@@ -466,64 +593,136 @@ footer a i {
     }
 }
 
-/*over ons*/
 
-.fake {
-    /*border: rebeccapurple 2px solid;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+
+/*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*/
+/*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*/
+/*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*//*over ons*/
+
+
+
+.mainoverons {
+    /*border: rebeccapurple 10px solid;*/
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .mainoverons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 
-.Paginatitelcontainer {
-    border: #ff001e 2px solid;
+.Paginatitelcontaineroverons {
+    /*border: #ff001e 5px solid;*/
+    height: 90px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     font-size: 200%;
     width: auto;
 }
 
 @media (min-width: 0px) and (max-width: 645px){
-    .Paginatitelcontainer {
+    .Paginatitelcontaineroverons {
+        font-size: 150%;
         width: 90%;
+        height: auto;
     }
 }
 
 .Contentcontainer {
-    /*border: green 2px solid;*/
+    /*border: green 5px solid;*/
     display: flex;
-    justify-content: space-evenly;
-    height: auto;
+    justify-content: center;
+    height: 450px;
     align-items: center;
-    width: 90%;
+    width: auto;
+    gap: 20px;
+    margin-bottom: 10px;
 }
 
-@media (min-width: 0px) and (max-width: 645px){
+@media (min-width: 0px) and (max-width: 1030px){
     .Contentcontainer {
         flex-direction: column;
-        margin-top: 20px;
+        height: auto;
     }
 }
 
+@media (min-width: 0px) and (max-width: 1030px){
+    .Contentcontainer {
+        flex-direction: column;
+    }
+}
+
+.Tekstenknopcontainer {
+    /*border: #ee00ff 6px solid;*/
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 1030px){
+    .Tekstenknopcontainer {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        gap: unset;
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 810px){
+    .Tekstenknopcontainer {
+        width: 80%;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 650px){
+    .Tekstenknopcontainer {
+        width: 90%;
+    }
+}
+
+
  .Fotocontainer {
-     /*border: #0037ff solid 2px;*/
+     /*border: #0037ff solid 5px;*/
      display: flex;
      justify-content: center;
      align-items: center;
      width: auto;
  }
 
+@media (min-width: 0px) and (max-width: 1030px){
+    .Fotocontainer {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
  .foto {
      /*border: #ff001e solid 2px;*/
-     width: 450px;
+     width: 500px;
      height: auto;
      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Voeg een subtiele schaduw toe */
      border-radius: 5px;
  }
 
-@media (min-width: 645px) and (max-width: 1024px){
+@media (min-width: 650px) and (max-width: 1030px){
+    .foto {
+        width: 80%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 650px){
     .foto {
         width: 90%;
     }
@@ -531,7 +730,6 @@ footer a i {
 
 
  .textvak {
-     margin-top: 20px;
      /*border: #00ff04 solid 5px;*/
      max-width: 450px;
      display: flex;
@@ -540,7 +738,7 @@ footer a i {
      flex-direction: column;
  }
 
-@media (min-width: 0px) and (max-width: 645px){
+@media (min-width: 0px) and (max-width: 810px){
     .textvak {
         max-width: unset;
     }
@@ -548,9 +746,9 @@ footer a i {
 
 .textcontainer {
     height: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Voeg een subtiele schaduw toe */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    /*border: #ff001e solid 5px;*/
+    /*border: #00ffff solid 5px;*/
     max-height: max-content;
     border-radius: 5px;
 }
@@ -570,70 +768,126 @@ footer a i {
 }
 
 .Classknoppen {
-    /*border: gold 2px solid;*/
-    width: 50%;
+    /*border: #ff0099 1px solid;*/
+    width: auto;
     display: flex;
     justify-content: space-evenly;
 }
 
 
-@media (min-width: 0px) and (max-width: 645px){
+@media (min-width: 815px) and (max-width: 1030px){
     .Classknoppen {
         flex-direction: column;
         width: auto;
     }
 }
 
-.knopstyle {
-    border: black solid 3px;
-    display: flex;
-    color: black;
-    width: 150px;
-    border-radius: 5px;
-    justify-content: center;
-}
-
-@media (min-width: 0px) and (max-width: 645px){
-    .knopstyle {
-        margin-top: 5px;
-        width: 300px;
+@media (min-width: 0px) and (max-width: 650px){
+    .Classknoppen {
+        flex-direction: column;
+        gap: 10px;
+        width: auto;
     }
 }
 
-/*Contact pagina*/
+
+.knopstyle {
+    border: black solid 3px;
+    font-weight: bold;
+    display: flex;
+    color: black;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 650px){
+    .knopstyle {
+        flex-direction: column;
+        gap: 10px;
+        width: auto;
+    }
+}
+
+
+.knopstyle:hover {
+    background-color: black;
+    color: white;
+}
+
+/*Voorbeelddd*//*Voorbeelddd*//*Voorbeelddd*/
+
+
+/*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*/
+/*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*/
+/*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*/
+
+.maincontact {
+    /*border: #ffd500 4px solid;*/
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 0px) and (max-width: 860px){
+    .maincontact {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+}
 
 .Paginatitelcontainercontact {
-    /*border: #ff001e 2px solid;*/
+    /*border: #ff001e 5px solid;*/
+    height: 90px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     font-size: 200%;
     width: auto;
 }
 
-@media (min-width: 0px) and (max-width: 645px){
+@media (min-width: 0px) and (max-width: 860px){
     .Paginatitelcontainercontact {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
         width: 90%;
-        font-size: 100%;
     }
 }
 
-.maincontact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+
+.Sectionforminfo {
+    /*border: #00ffc4 4px solid;*/
 }
 
-.Forminfo {
-    display: flex;
-    width: 90%;
-    height: auto;
-    justify-content: space-evenly;
+@media (min-width: 0px) and (max-width: 860px){
+    .Sectionforminfo {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
 }
 
-@media (min-width: 0px) and (max-width: 645px){
-    .Forminfo {
+
+.Infoform {
+    /*border: #ff001e 2px solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+@media (min-width: 0px) and (max-width: 860px){
+    .Infoform {
         flex-direction: column;
+        display: flex;
+        width: 100%;
     }
 }
 
@@ -641,88 +895,251 @@ footer a i {
     /*border: #ff001e solid 3px;*/
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    height: auto;
+    gap: 40px;
 }
 
-.inputsubmit {
-    border: #ff0099 solid 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.inputstyle {
-    width: 200px;
-    font-size: 125%;
-}
-
-.textvakinfo {
-    /*border: #00ff04 solid 5px;*/
-    max-width: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (min-width: 0px) and (max-width: 645px){
-    .textvakinfo {
-        max-width: unset;
+@media (min-width: 0px) and (max-width: 860px){
+    .contactgegevens {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        width: 100%;
     }
 }
 
-.textcontainerinfo {
-    height: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Voeg een subtiele schaduw toe */
-    /*border: #ff001e solid 5px;*/
-    max-height: max-content;
-    border-radius: 5px;
+
+.inputstyle {
+    background-color: white;
     padding: 5px;
+    color: black;
+    border: white;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 125%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/*bedank pagina*/
+@media (min-width: 0px) and (max-width: 860px){
+    .inputstyle {
+        flex-direction: column;
+        display: flex;
+        width: auto;
+    }
+}
+
+.containerinputknop {
+    /*border: #ff001e 5px solid;*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+.knopinput   {
+    border: black solid 3px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 125%;
+}
+
+@media (min-width: 0px) and (max-width: 860px){
+    .knopinput {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.knopinput:hover {
+    border: black solid 3px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+
+.Containtextarea {
+    /*border: #ff0099 solid 5px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 860px){
+    .Containtextarea {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+}
+
+.textareacontact {
+    /*border: #ff001e 3px solid;*/
+    width: 500px;
+    font-size: 125%;
+    padding: 10px;
+    height: 250px;
+    border-radius: 5px;
+    border: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 0px) and (max-width: 860px){
+    .textareacontact {
+        width: auto;
+    }
+}
 
 
-.Paginatitelcontainerbedank {
-    /*border: #ff001e 2px solid;*/
+/*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*/
+/*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*/
+/*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*/
+
+
+.mainbedank  {
+    /*border: rebeccapurple 10px solid;*/
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .mainbedank  {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+.Paginatitelcontainerbedank  {
+    /*border: #ff001e 5px solid;*/
+    height: 90px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     font-size: 200%;
     width: auto;
 }
 
 @media (min-width: 0px) and (max-width: 645px){
-    .Paginatitelcontainer {
+    .Paginatitelcontainerbedank {
+        font-size: 150%;
+        width: 90%;
+        height: auto;
+    }
+}
+
+.Contentcontainerbedank  {
+    /*border: green 5px solid;*/
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    align-items: center;
+    width: auto;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 1030px){
+    .Contentcontainerbedank  {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1030px){
+    .Contentcontainerbedank  {
+        flex-direction: column;
+    }
+}
+
+.Tekstenknopcontainerbedank  {
+    /*border: #ee00ff 6px solid;*/
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 1030px){
+    .Tekstenknopcontainerbedank  {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        gap: unset;
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 810px){
+    .Tekstenknopcontainerbedank  {
+        width: 80%;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 650px){
+    .Tekstenknopcontainerbedank {
         width: 90%;
     }
 }
 
-.Bedankmain {
-    /*border: #ff001e solid 5px;*/
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
 
-}
-
-.Sectiebedank {
-    /*border: #ff001e solid 5px;*/
+.Fotocontainerbedank {
+    /*border: #0037ff solid 5px;*/
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
+
+@media (min-width: 0px) and (max-width: 1030px){
+    .Fotocontainerbedank {
+        flex-direction: column;
+        height: 300px;
+        margin-top: 20px;
+    }
+}
+
+.fotobedank {
+    /*border: #ff001e solid 2px;*/
+    width: auto;
+    height: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Voeg een subtiele schaduw toe */
+    border-radius: 5px;
+}
+
+@media (min-width: 650px) and (max-width: 1030px){
+    .fotobedank {
+        height: 80%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 650px){
+    .fotobedank {
+        height: 150%;
+    }
+}
+
 
 .textvakbedank {
     /*border: #00ff04 solid 5px;*/
-    padding-top: 10px;
     max-width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-@media (min-width: 0px) and (max-width: 645px){
+@media (min-width: 0px) and (max-width: 810px){
     .textvakbedank {
         max-width: unset;
     }
@@ -730,151 +1147,15 @@ footer a i {
 
 .textcontainerbedank {
     height: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Voeg een subtiele schaduw toe */
-    /*border: #ff001e solid 5px;*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    /*border: #00ffff solid 5px;*/
     max-height: max-content;
     border-radius: 5px;
-    padding: 5px;
-    font-size: 120%;
-}
-
-/*portfolio overzicht*/
-
-.mainportfolio {
-    border: #ff001e solid 5px;
-    overflow: auto;
-}
-
-.sectionpaginatitel {
-    height: 15%;
-    border: #ff001e solid 5px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-@media (min-width: 0px) and (max-width: 645px){
-    .sectionpaginatitel {
-        height: auto;
-        padding-top: 10px;
-    }
-}
-
-.articlepaginatitel {
-    border: #ff001e solid 5px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    height: max-content;
-
-}
-
-.contentsection {
-    border: #ff0099 solid 5px;
-    display: flex;
-    justify-content: center;
-    height: auto;
-}
-
-@media (min-width: 0px) and (max-width: 645px){
-    .contentsection {
-       flex-direction: column;
-        height: auto;
-    }
 }
 
 
-.sectionfilterknop {
-    border: #ff001e solid 5px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
 
-@media (min-width: 0px) and (max-width: 645px){
-    .sectionfilterknop {
-        height: auto;
-        padding-top: 10px;
-    }
-}
-
-
-.sectionarticleproject {
-    border: #ff001e solid 5px;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-@media (min-width: 0px) and (max-width: 645px){
-    .sectionarticleproject {
-        width: auto;
-        padding-top: 10px;
-    }
-}
-
-
-.articleproject {
-    border: black solid 3px;
-    width: 80%;
-    height: 120px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.titelproject {
-    border: black solid 3px;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.knopnaarprojectspan {
-    height: 30%;
-    padding-right: 30px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.knopinfo {
-    border: black solid 3px;
-    border-radius: 5px;
-    color: black;
-    padding: 3px;
-}
-
-.sectioncontactknop {
-    border: #ff001e solid 5px;
-    width: 15%;
-}
-
-@media (min-width: 0px) and (max-width: 645px){
-    .sectioncontactknop {
-        height: auto;
-        width: auto;
-        padding-top: 10px
-    }
-}
-
-.articleknopcont {
-    border: #ff001e solid 3px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-
-.knopcontactpag {
-    border: black solid 3px;
-    border-radius: 3px;
-    color: black;
-    padding: 5px;
-}
 
 
 /*create project*//*create project*//*create project*//*create project*//*create project*//*create project*/
@@ -1132,10 +1413,9 @@ footer a i {
 }
 
 
-/*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
-/*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
-/*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
-
+/*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*/
+/*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*/
+/*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*/
 
 .mainportfolio {
     border: #00ffc4 solid 5px;
@@ -1279,7 +1559,7 @@ footer a i {
 /*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
 
 .Beheermainportfolio {
-    border: #ee00ff solid 5px;
+    border: #0037ff solid 5px;
     overflow: auto;
 }
 
