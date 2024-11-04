@@ -201,6 +201,10 @@ footer .Sectioncoypright {
     padding-left: 1%;
 }
 
+.fa-solid {
+    font-family: Arial;;
+}
+
 footer .Sectionsocialknoppen {
     display: flex;
     width: 9%;

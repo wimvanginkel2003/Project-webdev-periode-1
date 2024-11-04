@@ -19,14 +19,14 @@
 
                 <section class="invulveldentexten">
 
-                    <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
+                    <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>" required>
 
                     <!-- pagina titel invullen -->
-                    <input class="invulpaginanaam" type="text" value="<?php echo htmlspecialchars($inputpagina['Paginatitel']); ?>" name="Titelpagina">
+                    <input class="invulpaginanaam" type="text" value="<?php echo htmlspecialchars($inputpagina['Paginatitel']); ?>" name="Titelpagina" required>
 
 
                     <!-- Toelichting op project-->
-                    <textarea class="grootinvulveld" name="Toelichting"><?php echo htmlspecialchars($inputpagina['Toelichting']); ?></textarea>
+                    <textarea required class="grootinvulveld" name="Toelichting"><?php echo htmlspecialchars($inputpagina['Toelichting']); ?></textarea>
 
                 </section>
 

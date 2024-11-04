@@ -21,11 +21,11 @@
             <section class="invulveldentexten">
 
                 <!-- pagina titel invullen -->
-                <input class="invulpaginanaam" type="text" placeholder="Vul hier de pagina titel in" name="Titelpagina">
+                <input class="invulpaginanaam" type="text" placeholder="Vul hier de pagina titel in" name="Titelpagina" required>
 
 
                 <!-- Toelichting op project-->
-                <textarea class="grootinvulveld" placeholder="Schrijf hier je artikel" name="Toelichting"></textarea>
+                <textarea class="grootinvulveld" placeholder="Schrijf hier je artikel" name="Toelichting" required></textarea>
 
 
             </section>
