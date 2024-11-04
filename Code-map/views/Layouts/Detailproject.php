@@ -1,47 +1,48 @@
 <!doctype html>
 <html>
-<main class="maindetailproject">
+<main class="mainproject">
 
-        <div class="sectiedetailproject">
 
-            <section class="paginatitelprojectdetail">
 
-                <article class="articlepaginatiteldetail">
+            <section class="Paginatitelcontainerproject">
+
+                <article class="articlepaginatitelproject">
 
                     <!-- pagina titel -->
-                    <h2><?php echo htmlspecialchars($contentpagina['Paginatitel']); ?></h2>
+                    <h2 class="titelprojectpagina"><?php echo htmlspecialchars($contentpagina['Paginatitel']); ?></h2>
 
                 </article>
 
             </section>
 
+
+
             <section class="contentsectiondetail">
 
 
                 <!-- Verhaal over het proeject -->
-                <article class="Articleinfoproject">
-                        <p class="textvakproject"> <?php echo htmlspecialchars($contentpagina['Toelichting']); ?> </p>
+                <article class="Articletoelichtingproject">
+                        <p class="textvakproject"> <?php echo htmlspecialchars($contentpagina['Toelichting']); ?></p>
 
                 </article>
 
 
 
-                <article class="sectionexinfo">
+                <article class="Sectionprojectinfo">
 
 
-                    <span class="articleknopcont">
+                    <div class="articleknopcontact">
 
                         <!-- Knop naar contact pagina -->
-                        <a  class="knopcontactpag" href="">Contact pagina</a>
+                        <a  class="knopcontactpagina" href="">Contact pagina</a>
 
-                    </span>
-
+                    </div>
 
 
                     <!-- Datum publiceren project -->
-                    <div class="containerclas">
+                    <div class="containerpublicatiedatum">
 
-                        <h5 class="pubdatum">datum van project</h5>
+                        <h6 class="pubdatum">Publicatiedatum: <?php echo htmlspecialchars($datumgoed); ?></h6>
 
                     </div>
 
@@ -49,9 +50,6 @@
 
             </section>
 
-
-
-        </div>
 
 </main>
 </html>

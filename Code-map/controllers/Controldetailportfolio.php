@@ -9,7 +9,7 @@ if (isset($params['id'])) {
 
 
 
-    $sql = ("SELECT Paginatitel, Toelichting FROM Portfolio_projecten WHERE id = :id");
+    $sql = ("SELECT Paginatitel, Toelichting, Aanmaak_datum FROM Portfolio_projecten WHERE id = :id");
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':id', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -18,7 +18,13 @@ if (isset($params['id'])) {
 
 
 
-}
+    if (!empty($contentpagina['Aanmaak_datum'])) {
+
+        $pubdatum = $contentpagina['Aanmaak_datum'];
+        $splitsenonderdelen = explode("-", $pubdatum);
+        $datumgoed = $splitsenonderdelen[2] . - $splitsenonderdelen[1] . "-" . $splitsenonderdelen[0];
+
+    } else { $datumgoed = "Geen datum beschikbaar"; } }
 
 
 

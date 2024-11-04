@@ -15,7 +15,7 @@
 
 
             <!-- Toelichting op project-->
-            <textarea class="grootupdateveld" name="Projectbeschrijving"><?php echo htmlspecialchars($inputpagina['Toelichting']); ?></textarea>
+            <textarea class="grootupdateveld" name="Toelichting"><?php echo htmlspecialchars($inputpagina['Toelichting']); ?></textarea>
 
             <article class="containerdatumupdate" name="Projectbeschrijving" >
 

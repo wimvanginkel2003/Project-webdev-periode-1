@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 $id = $_POST['id'];
                 $stmt = $conn->prepare("DELETE FROM Portfolio_projecten WHERE ID = :id");
-                $stmt->bindParam(':id', $id, PDO::PARAM_INT); // Zorg ervoor dat je PDO::PARAM_INT gebruikt
+                $stmt->bindParam(':id', $id,);
 
 
                 if ($stmt->execute()) {

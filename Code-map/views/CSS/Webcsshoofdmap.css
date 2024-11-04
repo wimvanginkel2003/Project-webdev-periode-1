@@ -817,7 +817,6 @@ footer a i {
     color: white;
 }
 
-/*Voorbeelddd*//*Voorbeelddd*//*Voorbeelddd*/
 
 
 /*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*/
@@ -1292,126 +1291,195 @@ footer a i {
     width: 80px;
 }
 
-/*Detail pagina*/
+/*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*/
+/*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*/
+/*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*/
 
-.maindetailproject {
-    border: #0037ff 2px solid;
-    overflow: auto;
-}
-
-.sectiedetailproject {
-    border: #ee00ff 9px solid;
-    height: auto;
-}
-
-.paginatitelprojectdetail {
-    border: #00ff04 2px solid;
-    height: 60px;
+.Paginatitelcontaineroverons {
+    /*border: #ff001e 5px solid;*/
+    height: 90px;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 200%;
+    width: auto;
+}
+
+@media (min-width: 0px) and (max-width: 645px){
+    .Paginatitelcontaineroverons {
+        font-size: 150%;
+        width: 90%;
+        height: auto;
+    }
+}
+
+/*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*/
+
+.mainproject {
+    /*border: #0037ff 4px solid;*/
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.Paginatitelcontainerproject {
+    /*border: #ff001e 5px solid;*/
+    height: 90px;
+    display: flex;
+    font-size: 200%;
     justify-content: center;
     align-items: flex-end;
 }
 
-.articlepaginatiteldetail {
-    border: #ff0099 2px solid;
-}
-
-.contentsectiondetail {
-    border: #ff001e solid 5px;
-    display: flex;
-    justify-content: space-evenly;
-    height: auto;
-}
-
-@media (min-width: 0px) and (max-width: 740px){
-    .contentsectiondetail {
-        flex-direction: column;
+@media (min-width: 0px) and (max-width: 700px){
+    .Paginatitelcontainerproject {
+        height: auto;
+        font-size: 130%;
     }
 }
 
-.Articleinfoproject {
-    border: #0037ff solid 2px;
+
+.articlepaginatitelproject {
+    /*border: #00ffff 2px solid;*/
+    height: auto;
+}
+
+@media (min-width: 0px) and (max-width: 700px){
+    .articlepaginatitelproject {
+        height: auto;
+        width: 95%;
+    }
+}
+
+
+
+.contentsectiondetail {
+    /*border: #ffd500 solid 5px;*/
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 700px){
+    .contentsectiondetail {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Articletoelichtingproject {
+    /*border: #ff0099 solid 4px;*/
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 700px){
+    .Articletoelichtingproject {
+        width: 95%;
+    }
 }
 
 
 .textvakproject {
-    border: #ff0099 2px solid;
+    /*border: #ff0099 2px solid;*/
     height: auto;
-    max-width: 300px;
+    max-width: 600px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Voeg een subtiele schaduw toe */
     padding: 10px;
     max-height: max-content;
     border-radius: 5px;
-    margin: 5px;
+    min-width: 600px;
+    min-height: 150px;
 }
 
-@media (min-width: 0px) and (max-width: 740px){
+@media (min-width: 0px) and (max-width: 820px){
+    .textvakproject {
+        min-width: 400px;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 700px){
     .textvakproject {
         max-width: none;
+        min-width: 95%;
     }
 }
 
 
-.fotosectionproject {
-    border: #0037ff solid 2px;
+.Sectionprojectinfo {
+    /*border: #0037ff solid 5px;*/
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 700px){
+    .Sectionprojectinfo {
+        width: 95%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.articleknopcontact {
+    /*border: #ff0099 solid 5px;*/
     width: auto;
-    justify-content: space-evenly;
+    height: auto;
+}
+
+@media (min-width: 0px) and (max-width: 820px){
+    .articleknopcontact {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.knopcontactpagina {
+    border: black solid 3px;
+    font-weight: bold;
+    display: flex;
+    color: black;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    justify-content: center;
     align-items: center;
 }
 
-
-
-.fotoproject {
-    border: #ff001e solid 2px;
-    width: auto;
-    display: flex;
-    justify-content: space-evenly;
+.knopcontactpagina:hover {
+    color: white;
+    background-color: black;
 }
 
-@media (min-width: 0px) and (max-width: 740px){
-    .fotoproject {
-        flex-direction: column;
-    }
-}
-
-.Projectfotos {
-    border: green solid 2px;
-    width: 250px;
-    height: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Voeg een subtiele schaduw toe */
-    border-radius: 5px;
-    margin: 5px;
-}
-
-@media (min-width: 0px) and (max-width: 740px){
-    .Projectfotos {
+@media (min-width: 0px) and (max-width: 700px){
+    .knopcontactpagina {
         width: 100%;
     }
 }
 
-.sectionexinfo {
-    border: green solid 2px;
-}
-
-.containerclas {
+.containerpublicatiedatum {
     margin-top: 2px;
     margin-bottom: 2px;
-    border: green solid 2px;
+    /*border: #ff0099 solid 5px;*/
     display: flex;
     justify-content: center;
 }
 
-.pubdatum {
-    border: green solid 2px;
-    width: max-content;
+@media (min-width: 0px) and (max-width: 700px){
+    .containerpublicatiedatum {
+        justify-content: flex-end;
+    }
 }
 
+.pubdatum {
+    /*border: green solid 5px;*/
+    width: max-content;
+}
 
 /*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*/
 /*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*/

@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
 
-    $stmt = $conn->prepare("INSERT INTO Portfolio_projecten (Paginatitel, Toelichting) VALUES (:Paginatitel, :Toelichting)");
+    $stmt = $conn->prepare("INSERT INTO Portfolio_projecten (Paginatitel, Toelichting, Aanmaak_datum) VALUES (:Paginatitel, :Toelichting, CURDATE())");
     $stmt->bindParam(':Paginatitel', $Titelpagina);
     $stmt->bindParam(':Toelichting', $Toelichting);
 
