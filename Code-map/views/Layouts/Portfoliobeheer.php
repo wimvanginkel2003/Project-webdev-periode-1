@@ -14,8 +14,11 @@
     </section>
 
 
-    <div class="Beheercontentsection">
 
+
+
+
+    <div class="contentsection">
 
         <section class="Beheersectioncontactknop">
 
@@ -27,7 +30,6 @@
             </article>
 
         </section>
-
 
         <!-- Sectie project/ moet via php automatisch worden aangemaakt -->
 
@@ -42,16 +44,13 @@
                                 <h3><?php echo htmlspecialchars($variabeluitdatabase['Paginatitel']); ?></h3>
                             </span>
                 <span class="Beheerknopnaarprojectspan">
-                                <a class="knopinfo" href="/admin-project-pagina-bewerken?id=<?php echo urlencode($variabeluitdatabase['ID']); ?>">Meer informatie</a>
+                                <a class="knopinfo" href="/admin-project-pagina-bewerken?id=<?php echo urlencode($variabeluitdatabase['ID']); ?>">Update project</a>
                             </span>
 
             </article>
             <?php } ?>
 
         </section>
-
-
-
 
     </div>
 

@@ -17,17 +17,6 @@
             <div class="contentsection">
 
 
-                <section class="sectionfilterknop">
-
-                        <!-- invulveld welk range je wilt filteren --->
-                        <input type="date">
-
-                        <!-- Knop om filter te bevestigen --->
-                        <button>Filter</button>
-
-                </section>
-
-
                 <!-- Sectie project/ moet via php automatisch worden aangemaakt -->
 
                 <section class="sectionarticleproject">
