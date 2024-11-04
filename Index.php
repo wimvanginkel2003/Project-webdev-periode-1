@@ -1,16 +1,17 @@
 <?php
 
-
+// Haalt uit de browser welke pagina word aangeroepen //
 $request_Page = $_SERVER['REQUEST_URI'];
 
+// Zorgt dat de ID gescheiden word van het pad //
 $parsed_url = parse_url($request_Page);
 
-//uitzoeken //
+// Zorgt dat de ID(waarde) gescheiden word van ID(sleutel)  //
 if (isset($parsed_url['query'])) {
     parse_str($parsed_url['query'], $params);
 }
 
-
+// Router die request ontvangt vanuit de browser, vervolgens een pagina oproept uit de controller en deze weer terug stuurt naar de browser  //
 switch ($parsed_url['path']) {
     default:
         require "Code-map/controllers/Controlhome.php";
