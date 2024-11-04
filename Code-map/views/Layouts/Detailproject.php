@@ -20,7 +20,7 @@
 
                 <!-- Verhaal over het proeject -->
                 <article class="Articleinfoproject">
-                        <p class="textvakproject"> <?php echo htmlspecialchars($contentpagina['Projectitel']); ?> </p>
+                        <p class="textvakproject"> <?php echo htmlspecialchars($contentpagina['Toelichting']); ?> </p>
 
                 </article>
 

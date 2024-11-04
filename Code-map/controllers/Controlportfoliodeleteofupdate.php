@@ -7,7 +7,7 @@ if (isset($params['id'])) {
 
     $id = (int)$params['id'];
 
-    $sql = ("SELECT Paginatitel, Projectitel FROM Portfolio_projecten WHERE id = :id");
+    $sql = ("SELECT Paginatitel, Toelichting FROM Portfolio_projecten WHERE id = :id");
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':id', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -38,16 +38,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($updateofdelete == "Update") {
 
-                    $titelpagina = $_POST["titelpagina"];
-                    $projectbeschrijving = $_POST["Projectbeschrijving"];
+                    $Titelpagina = $_POST["Titelpagina"];
+                    $Toelichting = $_POST["Toelichting"];
                     $id = $_POST['id'];
 
-                    var_dump($titelpagina, $projectbeschrijving, $id);
+                    var_dump($Titelpagina, $Toelichting, $id);
 
 
-                    $stmt = $conn->prepare("UPDATE Portfolio_projecten SET Paginatitel = :Paginatitel, Projectitel = :Projectitel WHERE ID = :id");
-                    $stmt->bindParam(':Paginatitel', $titelpagina);
-                    $stmt->bindParam(':Projectitel', $projectbeschrijving);
+                    $stmt = $conn->prepare("UPDATE Portfolio_projecten SET Paginatitel = :Paginatitel, Toelichting = :Toelichting WHERE ID = :id");
+                    $stmt->bindParam(':Paginatitel', $Titelpagina);
+                    $stmt->bindParam(':Toelichting', $Toelichting);
                     $stmt->bindParam(':id', $id,);
 
                     if ($stmt->execute()) {

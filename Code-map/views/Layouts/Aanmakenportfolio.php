@@ -10,13 +10,13 @@
             <section class="invulveldentexten">
 
                 <!-- pagina titel invullen -->
-                <input class="invulpaginanaam" type="text" placeholder="Vul hier de pagina titel in" name="titelpagina">
+                <input class="invulpaginanaam" type="text" placeholder="Vul hier de pagina titel in" name="Titelpagina">
 
 
                 <!-- Toelichting op project-->
-                <textarea class="grootinvulveld" placeholder="Schrijf hier je artikel" name="Projectbeschrijving"></textarea>
+                <textarea class="grootinvulveld" placeholder="Schrijf hier je artikel" name="Toelichting"></textarea>
 
-                <article class="containerdatum" name="Projectbeschrijving" >
+                <article class="containerdatum" name="Toelichting">
 
                     <!-- Publicatie datum invoeren -->
                     <label>Publicatiedatum</label>

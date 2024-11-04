@@ -11,11 +11,11 @@
             <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
 
             <!-- pagina titel invullen -->
-            <input class="Updatepaginanaam" type="text" value="<?php echo htmlspecialchars($inputpagina['Paginatitel']); ?>" name="titelpagina">
+            <input class="Updatepaginanaam" type="text" value="<?php echo htmlspecialchars($inputpagina['Paginatitel']); ?>" name="Titelpagina">
 
 
             <!-- Toelichting op project-->
-            <textarea class="grootupdateveld" name="Projectbeschrijving"><?php echo htmlspecialchars($inputpagina['Projectitel']); ?></textarea>
+            <textarea class="grootupdateveld" name="Projectbeschrijving"><?php echo htmlspecialchars($inputpagina['Toelichting']); ?></textarea>
 
             <article class="containerdatumupdate" name="Projectbeschrijving" >
 
