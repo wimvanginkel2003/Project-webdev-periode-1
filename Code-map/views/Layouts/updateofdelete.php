@@ -1,53 +1,55 @@
 <!doctype html>
 <html>
 
-<main class="mainaanmakenproject">
+    <main class="mainaanmakenproject">
 
-    <section class="sectionpaginatitelprojectaanmaken">
+            <section class="sectionpaginatitelprojectaanmaken">
 
-        <article class="articlepaginatitelaanmakenproject">
+                    <article class="articlepaginatitelaanmakenproject">
 
-            <!-- pagina titel -->
-            <h2>Project pagina aanmaken</h2>
+                            <!-- pagina titel -->
+                            <h2>Project pagina aanmaken</h2>
 
-        </article>
+                    </article>
 
-    </section>
+            </section>
 
 
             <form class="algemenesectie" action="/Code-map/controllers/Controlportfoliodeleteofupdate.php" method="post" >
 
-                <section class="invulveldentexten">
+                    <section class="invulveldentexten">
 
-                    <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>" required>
+                            <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>" required>
 
-                    <!-- pagina titel invullen -->
-                    <input class="invulpaginanaam" type="text" value="<?php echo htmlspecialchars($inputpagina['Paginatitel']); ?>" name="Titelpagina" required>
-
-
-                    <!-- Toelichting op project-->
-                    <textarea required class="grootinvulveld" name="Toelichting"><?php echo htmlspecialchars($inputpagina['Toelichting']); ?></textarea>
-
-                </section>
+                            <!-- pagina titel invullen -->
+                            <input class="invulpaginanaam" type="text" value="<?php echo htmlspecialchars($inputpagina['Paginatitel']); ?>" name="Titelpagina" required>
 
 
+                            <!-- Toelichting op project-->
+                            <textarea required class="grootinvulveld" name="Toelichting"><?php echo htmlspecialchars($inputpagina['Toelichting']); ?></textarea>
 
-        <section class="projectopslaan">
-
-            <article class="knopcontainer">
-                <!-- Bestanden worden opgeslagen -->
-                <input class="knopop" type="submit" name="Typeknop" value="Update">
-            </article>
-
-            <article class="knopcontainer">
-                <!-- Bestanden worden opgeslagen -->
-                <input class="knopop" type="submit" name="Typeknop" value="Delete">
-            </article>
+                    </section>
 
 
-        </section>
 
-    </form>
+                    <section class="projectopslaan">
 
-</main>
+                            <article class="knopcontainer">
+                                <!-- Bestanden worden opgeslagen -->
+                                <input class="knopop" type="submit" name="Typeknop" value="Update">
+                            </article>
+
+
+                            <article class="knopcontainer">
+                                <!-- Bestanden worden opgeslagen -->
+                                <input class="knopop" type="submit" name="Typeknop" value="Delete">
+                            </article>
+
+
+                    </section>
+
+            </form>
+
+    </main>
+
 </html>

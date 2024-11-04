@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<main class="mainproject">
+    <main class="mainproject">
 
 
 
@@ -51,5 +51,5 @@
             </section>
 
 
-</main>
+    </main>
 </html>
