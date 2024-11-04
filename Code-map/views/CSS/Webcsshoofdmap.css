@@ -1161,23 +1161,58 @@ footer a i {
 /*create project*//*create project*//*create project*//*create project*//*create project*//*create project*/
 
 .mainaanmakenproject {
-    border: #ff0099 solid 2px;
+    /*border: #00ffc4 solid 5px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
     .mainaanmakenproject {
         height: auto;
-        display: flex;
         justify-content: center;
+        align-items: center;
+    }
+}
+
+.sectionpaginatitelprojectaanmaken {
+    height: 90px;
+    /*border: #ffd500 solid 5px;*/
+    display: flex;
+    font-size: 200%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 0px) and (max-width: 750px){
+    .sectionpaginatitelprojectaanmaken {
+        height: auto;
+        width: 95%;
+    }
+}
+
+.articlepaginatitelaanmakenproject {
+    /*border: #ff001e solid 5px;*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: max-content;
+}
+
+@media (min-width: 0px) and (max-width: 750px){
+    .articlepaginatitelaanmakenproject {
+        width: 95%;
+        margin-top: 25px;
     }
 }
 
 .algemenesectie {
-    border: #00ff04 solid 5px;
+    /*border: #00ff04 solid 5px;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 90%;
+    gap: 25px;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
@@ -1189,10 +1224,11 @@ footer a i {
 }
 
 .invulveldentexten {
-    border: #ff0099 solid 5px;
+    /*border: #ffd500 solid 5px;*/
     display: flex;
     flex-direction: column;
     width: 35%;
+    gap: 20px;
     justify-content: space-around;
 }
 
@@ -1205,6 +1241,8 @@ footer a i {
 
 .invulpaginanaam {
     font-size: 150%;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
@@ -1215,6 +1253,9 @@ footer a i {
 
 .grootinvulveld {
     height: 200px;
+    padding: 10px;
+    font-size: 125%;
+    border-radius: 5px;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
@@ -1223,12 +1264,9 @@ footer a i {
     }
 }
 
-.containerdatum {
-    margin-top: 5px;
-}
 
 .toevoegenafbeeldingen {
-    border: #ff0099 solid 5px;
+    /*border: #ff0099 solid 5px;*/
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -1240,55 +1278,54 @@ footer a i {
     }
 }
 
-.titelproject {
-    /*border: #ff001e solid 5px;*/
-    margin-top: 5px;
-}
-
-
-.inputafbeeldingen {
-    border: #ff0099 solid 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sectionafbeeldingentoe {
-    border: #ff0099 solid 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.inputbestanden {
-    border: #ff001e solid 5px;
-    margin-top: 5px;
-    display: flex;
-
-}
 
 .projectopslaan {
-    border: #ff0099 solid 5px;
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-@media (min-width: 0px) and (max-width: 740px){
-    .projectopslaan {
-        width: auto;
-    }
+    /*border: #ff0099 solid 5px;*/
+    margin-bottom: 15px;
 }
 
 .knopcontainer {
-    border: #ff0099 solid 5px;
-    margin-top: 5px;
+    /*border: #00ff04 solid 5px;*/
 }
 
 .knopop {
-    width: 80px;
+    border: black solid 3px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 125%;
 }
+
+.knopop:hover {
+    border: black solid 3px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+
+@media (min-width: 0px) and (max-width: 750px){
+    .knopop {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 860px){
+    .inputstyle {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+}
+
+
 
 /*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*/
 /*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*//*Project pagina*/
@@ -1831,101 +1868,175 @@ footer a i {
 
 
 
-
-
 /*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*/
 /*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*/
 /*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*//*Projectupdatedelete*/
 
-.mainupdateproject {
-    border: #ff0099 solid 2px;
+
+.mainaanmakenproject {
+    /*border: #00ffc4 solid 5px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
-    .mainupdateproject {
+    .mainaanmakenproject {
         height: auto;
-        display: flex;
         justify-content: center;
+        align-items: center;
     }
 }
 
-.algemenesectieupdate {
-    border: #00ff04 solid 5px;
+.sectionpaginatitelprojectaanmaken {
+    height: 90px;
+    /*border: #ffd500 solid 5px;*/
+    display: flex;
+    font-size: 200%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 0px) and (max-width: 750px){
+    .sectionpaginatitelprojectaanmaken {
+        height: auto;
+        width: 95%;
+    }
+}
+
+.articlepaginatitelaanmakenproject {
+    /*border: #ff001e solid 5px;*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: max-content;
+}
+
+@media (min-width: 0px) and (max-width: 750px){
+    .articlepaginatitelaanmakenproject {
+        width: 95%;
+        margin-top: 25px;
+    }
+}
+
+.algemenesectie {
+    /*border: #00ff04 solid 5px;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 90%;
+    gap: 25px;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
-    .algemenesectieupdate {
+    .algemenesectie {
         height: auto;
         width: 95%;
         flex-direction: column;
     }
 }
 
-.Invulveldenupdate {
-    border: #ff0099 solid 5px;
+.invulveldentexten {
+    /*border: #ffd500 solid 5px;*/
     display: flex;
     flex-direction: column;
     width: 35%;
+    gap: 20px;
     justify-content: space-around;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
-    .Invulveldenupdate {
+    .invulveldentexten {
         height: auto;
         width: auto;
     }
 }
 
-.Updatepaginanaam {
+.invulpaginanaam {
     font-size: 150%;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
-    .Updatepaginanaam {
+    .invulpaginanaam {
         margin-top: 5px;
     }
 }
 
-.grootupdateveld {
+.grootinvulveld {
     height: 200px;
+    padding: 10px;
+    font-size: 125%;
+    border-radius: 5px;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
-    .grootupdateveld {
+    .grootinvulveld {
         margin-top: 5px;
     }
 }
 
-.containerdatumupdate {
-    margin-top: 5px;
-}
 
-
-
-.projectupdateofdelete {
-    border: #ff0099 solid 5px;
-    width: 10%;
+.toevoegenafbeeldingen {
+    /*border: #ff0099 solid 5px;*/
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     flex-direction: column;
+    width: 35%;
 }
 
 @media (min-width: 0px) and (max-width: 740px){
-    .projectopslaan {
+    .toevoegenafbeeldingen {
         width: auto;
     }
 }
 
+
+.projectopslaan {
+    /*border: #ff0099 solid 5px;*/
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
 .knopcontainer {
-    border: #ff0099 solid 5px;
-    margin-top: 5px;
+    /*border: #00ff04 solid 5px;*/
 }
 
 .knopop {
-    width: 80px;
+    border: black solid 3px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 125%;
+}
+
+.knopop:hover {
+    border: black solid 3px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+
+@media (min-width: 0px) and (max-width: 750px){
+    .knopop {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 860px){
+    .inputstyle {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
 }

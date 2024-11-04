@@ -1,35 +1,38 @@
 <!doctype html>
 <html>
 
-<main class="mainupdateproject">
+<main class="mainaanmakenproject">
+
+    <section class="sectionpaginatitelprojectaanmaken">
+
+        <article class="articlepaginatitelaanmakenproject">
+
+            <!-- pagina titel -->
+            <h2>Project pagina aanmaken</h2>
+
+        </article>
+
+    </section>
 
 
-    <form class="algemenesectieupdate" action="/Code-map/controllers/Controlportfoliodeleteofupdate.php" method="post" >
+            <form class="algemenesectie" action="/Code-map/controllers/Controlportfoliodeleteofupdate.php" method="post" >
 
-        <section class="Invulveldenupdate">
+                <section class="invulveldentexten">
 
-            <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
+                    <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
 
-            <!-- pagina titel invullen -->
-            <input class="Updatepaginanaam" type="text" value="<?php echo htmlspecialchars($inputpagina['Paginatitel']); ?>" name="Titelpagina">
+                    <!-- pagina titel invullen -->
+                    <input class="invulpaginanaam" type="text" value="<?php echo htmlspecialchars($inputpagina['Paginatitel']); ?>" name="Titelpagina">
 
 
-            <!-- Toelichting op project-->
-            <textarea class="grootupdateveld" name="Toelichting"><?php echo htmlspecialchars($inputpagina['Toelichting']); ?></textarea>
+                    <!-- Toelichting op project-->
+                    <textarea class="grootinvulveld" name="Toelichting"><?php echo htmlspecialchars($inputpagina['Toelichting']); ?></textarea>
 
-            <article class="containerdatumupdate" name="Projectbeschrijving" >
-
-                <!-- Publicatie datum invoeren -->
-                <label>Publicatiedatum</label>
-
-                <input type="date" placeholder="Vul hier de publicatiedatum in" name="publicatiedatum">
-
-            </article>
-        </section>
+                </section>
 
 
 
-        <section class="projectupdateofdelete">
+        <section class="projectopslaan">
 
             <article class="knopcontainer">
                 <!-- Bestanden worden opgeslagen -->

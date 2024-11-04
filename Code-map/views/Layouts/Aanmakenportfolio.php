@@ -3,6 +3,17 @@
 
 <main class="mainaanmakenproject">
 
+            <section class="sectionpaginatitelprojectaanmaken">
+
+                <article class="articlepaginatitelaanmakenproject">
+
+                    <!-- pagina titel -->
+                    <h2>Project pagina aanmaken</h2>
+
+                </article>
+
+            </section>
+
 
 
             <form class="algemenesectie" action="/Code-map/controllers/Controlaanmakenportfolio.php" method="post" >
@@ -16,23 +27,18 @@
                 <!-- Toelichting op project-->
                 <textarea class="grootinvulveld" placeholder="Schrijf hier je artikel" name="Toelichting"></textarea>
 
-                <article class="containerdatum" name="Toelichting">
-
-                    <!-- Publicatie datum invoeren -->
-                    <label>Publicatiedatum</label>
-
-                    <input type="date" placeholder="Vul hier de publicatiedatum in" name="publicatiedatum">
-
-                </article>
 
             </section>
 
             <section class="projectopslaan">
+
                 <article class="knopcontainer">
                 <!-- Bestanden worden opgeslagen -->
                     <input class="knopop" type="submit" value="Opslaan">
+
                 </article>
-        </section>
+
+            </section>
 
         </form>
 
