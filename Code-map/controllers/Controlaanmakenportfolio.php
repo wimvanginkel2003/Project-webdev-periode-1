@@ -1,5 +1,7 @@
 <?php
 
+ob_start();
+
 $paginatitel = "Project aanmaak beheer admin| ProcodeX";
 
 
@@ -23,7 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':Toelichting', $Toelichting);
 
     $stmt->execute();
+    header("Location: Controlportfolio.php");
+    exit();
 
 }
+
+ob_end_flush();
 
 ?>
