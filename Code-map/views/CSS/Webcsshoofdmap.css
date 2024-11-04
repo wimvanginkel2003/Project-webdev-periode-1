@@ -54,22 +54,16 @@ footer {
 
 /* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/
 /* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/
-/* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/ /* Header  van de website inclusief website*/
-
-
-/*Navigatie in de header*/ /*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*/
-/*Navigatie in de header*/ /*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*/
-/*Navigatie in de header*/ /*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*/
-/*Navigatie in de header*/ /*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*/
-
 
 header .logoheader {
     color: white;
     margin-left: 10px;
 }
 
+
+/*Navigatie in de header*/ /*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*//*Navigatie in de header*/
+
 header nav {
-    /*border: #0037ff solid 2px;*/
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -87,7 +81,6 @@ header nav {
 }
 
 header nav ul {
-    /*border: #ff0099 solid 5px;*/
     display: flex;
     flex-direction: row;
     width: 70%;
@@ -117,7 +110,6 @@ header nav ul {
 
 
 header nav ul li {
-    /*border: #ffd500 solid 2px;*/
     width: 25%;
     display: flex;
     justify-content: start;
@@ -132,7 +124,6 @@ header nav ul li {
         justify-content: center;
         background-color: black;
         height: 100px;
-        /*background-color: black;*/
     }
 }
 
@@ -214,7 +205,7 @@ footer .Sectionsocialknoppen {
     align-items: center;
 }
 
-/*Formule = width en groot genog font-size hebben*/
+
 @media (min-width: 800px) and (max-width: 1024px) {
     footer .Sectionsocialknoppen {
         width: 10%;
@@ -222,7 +213,7 @@ footer .Sectionsocialknoppen {
     }
 }
 
-/*Formule = width en groot genog font-size hebben*/
+
 @media (min-width: 650px) and (max-width: 800px) {
     footer .Sectionsocialknoppen {
         width: 11%;
@@ -230,7 +221,7 @@ footer .Sectionsocialknoppen {
     }
 }
 
-/*Formule = width en groot genog font-size hebben*/
+
 @media (min-width: 0px) and (max-width: 700px) {
     footer .Sectionsocialknoppen {
         width: 11%;
@@ -239,7 +230,7 @@ footer .Sectionsocialknoppen {
 }
 
 
-/* Telefoons overdwars*/
+
 @media (min-width: 660px) and (max-height: 450px){
     footer .Sectionsocialknoppen {
         font-size: 150%;
@@ -261,7 +252,6 @@ footer a i {
 
 
 .mainhome {
-    /*border: solid green 6px;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -269,7 +259,7 @@ footer a i {
     background-color: black;
 }
 
-/* media q  grote telefoons*/
+
 @media (min-width: 0px) and (max-width: 645px) {
     .mainhome {
         flex-direction: column;
@@ -280,7 +270,6 @@ footer a i {
 
 
 .Links {
-    /*border: solid #00ffc4 6px;*/
     width: 410px;
     display: flex;
     justify-content: center;
@@ -312,7 +301,6 @@ footer a i {
 
 
 .ArticlLinks {
-    /*border: solid #ff001e 6px;*/
     height: 50%;
     display: flex;
     align-items: center;
@@ -373,7 +361,6 @@ footer a i {
 
 
 .Rechts {
-    /*border: solid #00ffff 5px;*/
     width: 570px;
     display: flex;
     justify-content: flex-end;
@@ -416,7 +403,6 @@ footer a i {
 
 
 .articlecontent {
-    /*border: solid #00ff04 6px;*/
     height: 35%;
     display: flex;
     flex-direction: column;
@@ -448,7 +434,6 @@ footer a i {
 
 
 .ClassSlogan {
-    /*border: solid #ee00ff 4px;*/
     height: 50%;
     display: flex;
     font-size: 170%;
@@ -482,7 +467,6 @@ footer a i {
 }
 
 .ClassKnop {
-    /*border: solid rebeccapurple 4px;*/
     height: auto;
     width: auto;
     display: flex;
@@ -554,7 +538,6 @@ footer a i {
 }
 
 .articleX {
-    /*border: solid #ff0099 6px;*/
     height: 50%;
     display: flex;
     width: 50%;
@@ -605,9 +588,6 @@ footer a i {
 
 
 
-.mainoverons {
-    /*border: rebeccapurple 10px solid;*/
-}
 
 @media (min-width: 0px) and (max-width: 645px){
     .mainoverons {
@@ -619,7 +599,6 @@ footer a i {
 
 
 .Paginatitelcontaineroverons {
-    /*border: #ff001e 5px solid;*/
     height: 90px;
     display: flex;
     justify-content: center;
@@ -637,7 +616,6 @@ footer a i {
 }
 
 .Contentcontainer {
-    /*border: green 5px solid;*/
     display: flex;
     justify-content: center;
     height: 450px;
@@ -661,7 +639,6 @@ footer a i {
 }
 
 .Tekstenknopcontainer {
-    /*border: #ee00ff 6px solid;*/
     width: auto;
     display: flex;
     flex-direction: column;
@@ -697,7 +674,6 @@ footer a i {
 
 
  .Fotocontainer {
-     /*border: #0037ff solid 5px;*/
      display: flex;
      justify-content: center;
      align-items: center;
@@ -713,7 +689,6 @@ footer a i {
 }
 
  .foto {
-     /*border: #ff001e solid 2px;*/
      width: 500px;
      height: auto;
      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Voeg een subtiele schaduw toe */
@@ -734,7 +709,6 @@ footer a i {
 
 
  .textvak {
-     /*border: #00ff04 solid 5px;*/
      max-width: 450px;
      display: flex;
      justify-content: center;
@@ -752,14 +726,12 @@ footer a i {
     height: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    /*border: #00ffff solid 5px;*/
     max-height: max-content;
     border-radius: 5px;
 }
 
 
 .knoppencontainer {
-    /*border: #0037ff 2px solid;*/
     width: 90%;
     display: flex;
     justify-content: flex-end;
@@ -772,7 +744,6 @@ footer a i {
 }
 
 .Classknoppen {
-    /*border: #ff0099 1px solid;*/
     width: auto;
     display: flex;
     justify-content: space-evenly;
@@ -828,7 +799,6 @@ footer a i {
 /*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*//*Contact pagina*/
 
 .maincontact {
-    /*border: #ffd500 4px solid;*/
     gap: 60px;
     display: flex;
     flex-direction: column;
@@ -845,7 +815,6 @@ footer a i {
 }
 
 .Paginatitelcontainercontact {
-    /*border: #ff001e 5px solid;*/
     height: 90px;
     display: flex;
     justify-content: center;
@@ -865,9 +834,6 @@ footer a i {
 }
 
 
-.Sectionforminfo {
-    /*border: #00ffc4 4px solid;*/
-}
 
 @media (min-width: 0px) and (max-width: 860px){
     .Sectionforminfo {
@@ -879,7 +845,6 @@ footer a i {
 
 
 .Infoform {
-    /*border: #ff001e 2px solid;*/
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -895,7 +860,6 @@ footer a i {
 }
 
 .contactgegevens {
-    /*border: #ff001e solid 3px;*/
     display: flex;
     flex-direction: column;
     height: auto;
@@ -935,7 +899,6 @@ footer a i {
 }
 
 .containerinputknop {
-    /*border: #ff001e 5px solid;*/
     display: flex;
     justify-content: flex-end;
 }
@@ -968,7 +931,6 @@ footer a i {
 }
 
 .Containtextarea {
-    /*border: #ff0099 solid 5px;*/
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -983,7 +945,6 @@ footer a i {
 }
 
 .textareacontact {
-    /*border: #ff001e 3px solid;*/
     width: 500px;
     font-size: 125%;
     padding: 10px;
@@ -1005,9 +966,7 @@ footer a i {
 /*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*//*bedank pagina*/
 
 
-.mainbedank  {
-    /*border: rebeccapurple 10px solid;*/
-}
+
 
 @media (min-width: 0px) and (max-width: 645px){
     .mainbedank  {
@@ -1019,7 +978,6 @@ footer a i {
 
 
 .Paginatitelcontainerbedank  {
-    /*border: #ff001e 5px solid;*/
     height: 90px;
     display: flex;
     justify-content: center;
@@ -1037,7 +995,6 @@ footer a i {
 }
 
 .Contentcontainerbedank  {
-    /*border: green 5px solid;*/
     display: flex;
     justify-content: center;
     height: 450px;
@@ -1054,7 +1011,6 @@ footer a i {
 
 
 .Tekstenknopcontainerbedank  {
-    /*border: #ee00ff 6px solid;*/
     width: auto;
     display: flex;
     flex-direction: column;
@@ -1071,7 +1027,6 @@ footer a i {
 
 
 .textvakbedank {
-    /*border: #00ff04 solid 5px;*/
     max-width: 450px;
     display: flex;
     justify-content: center;
@@ -1104,7 +1059,6 @@ footer a i {
 /*create project*//*create project*//*create project*//*create project*//*create project*//*create project*/
 
 .mainaanmakenproject {
-    /*border: #00ffc4 solid 5px;*/
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1120,7 +1074,6 @@ footer a i {
 
 .sectionpaginatitelprojectaanmaken {
     height: 90px;
-    /*border: #ffd500 solid 5px;*/
     display: flex;
     font-size: 200%;
     justify-content: center;
@@ -1135,7 +1088,6 @@ footer a i {
 }
 
 .articlepaginatitelaanmakenproject {
-    /*border: #ff001e solid 5px;*/
     display: flex;
     align-content: center;
     justify-content: center;
@@ -1150,7 +1102,6 @@ footer a i {
 }
 
 .algemenesectie {
-    /*border: #00ff04 solid 5px;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1167,7 +1118,6 @@ footer a i {
 }
 
 .invulveldentexten {
-    /*border: #ffd500 solid 5px;*/
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -1209,7 +1159,6 @@ footer a i {
 
 
 .toevoegenafbeeldingen {
-    /*border: #ff0099 solid 5px;*/
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -1223,13 +1172,9 @@ footer a i {
 
 
 .projectopslaan {
-    /*border: #ff0099 solid 5px;*/
     margin-bottom: 15px;
 }
 
-.knopcontainer {
-    /*border: #00ff04 solid 5px;*/
-}
 
 .knopop {
     border: black solid 3px;
@@ -1276,7 +1221,6 @@ footer a i {
 
 
 .mainproject {
-    border: #0037ff 4px solid;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -1284,7 +1228,6 @@ footer a i {
 
 
 .Paginatitelcontainerproject {
-    border: #ff001e 5px solid;
     height: 90px;
     display: flex;
     font-size: 200%;
@@ -1301,7 +1244,6 @@ footer a i {
 
 
 .articlepaginatitelproject {
-    border: #00ffff 2px solid;
     height: auto;
 }
 
@@ -1315,7 +1257,6 @@ footer a i {
 
 
 .contentsectiondetail {
-    border: #ffd500 solid 5px;
     display: flex;
     justify-content: center;
     height: auto;
@@ -1330,7 +1271,6 @@ footer a i {
 }
 
 .Articletoelichtingproject {
-    border: #ff0099 solid 4px;
     width: auto;
     display: flex;
     justify-content: center;
@@ -1345,7 +1285,6 @@ footer a i {
 
 
 .textvakproject {
-    border: #ff0099 2px solid;
     height: auto;
     max-width: 600px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Voeg een subtiele schaduw toe */
@@ -1372,7 +1311,6 @@ footer a i {
 
 
 .Sectionprojectinfo {
-    border: #0037ff solid 5px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1387,7 +1325,6 @@ footer a i {
 }
 
 .articleknopcontact {
-    border: #ff0099 solid 5px;
     width: auto;
     height: auto;
 }
@@ -1425,7 +1362,6 @@ footer a i {
 .containerpublicatiedatum {
     margin-top: 2px;
     margin-bottom: 2px;
-    border: #ff0099 solid 5px;
     display: flex;
     justify-content: center;
 }
@@ -1437,16 +1373,16 @@ footer a i {
 }
 
 .pubdatum {
-    border: green solid 5px;
     width: max-content;
 }
+
+
 
 /*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*/
 /*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*/
 /*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*//*Portfolio-overzichtpagina*/
 
 .mainportfolio {
-    /*border: #00ffc4 solid 5px;*/
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1454,7 +1390,6 @@ footer a i {
 
 .sectionpaginatitel {
     height: 90px;
-    /*border: #ffd500 solid 5px;*/
     display: flex;
     font-size: 200%;
     justify-content: center;
@@ -1468,7 +1403,6 @@ footer a i {
 }
 
 .articlepaginatitel {
-    /*border: #ff001e solid 5px;*/
     display: flex;
     align-content: center;
     justify-content: center;
@@ -1483,7 +1417,6 @@ footer a i {
 }
 
 .contentsection {
-    /*border: #ffd500 solid 5px;*/
     display: flex;
     justify-content: center;
     height: auto;
@@ -1500,7 +1433,6 @@ footer a i {
 
 
 .sectionarticleproject {
-    /*border: #0037ff solid 5px;*/
     width: auto;
     display: flex;
     justify-content: center;
@@ -1538,7 +1470,6 @@ footer a i {
 
 
 .titelproject {
-    /*border: black solid 3px;*/
     height: 60%;
     display: flex;
     align-items: center;
@@ -1571,7 +1502,6 @@ footer a i {
 }
 
 .sectioncontactknop {
-    /*border: #0037ff solid 5px;*/
     width: auto;
 }
 
@@ -1586,7 +1516,6 @@ footer a i {
 }
 
 .articleknopcont {
-    /*border: #ff001e solid 3px;*/
     display: flex;
     justify-content: center;
 }
@@ -1625,7 +1554,6 @@ footer a i {
 /*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*//*Portfoliobeheerpagina*/
 
 .Beheermainportfolio {
-    /*border: #00ffc4 solid 5px;*/
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1634,7 +1562,6 @@ footer a i {
 
 .Beheersectionpaginatitel {
     height: 90px;
-    /*border: #ffd500 solid 5px;*/
     display: flex;
     font-size: 200%;
     justify-content: center;
@@ -1648,7 +1575,6 @@ footer a i {
 }
 
 .Beheerarticlepaginatitel {
-    /*border: #ff001e solid 5px;*/
     display: flex;
     align-content: center;
     justify-content: center;
@@ -1664,7 +1590,6 @@ footer a i {
 
 
 .Beheercontentsection {
-    /*border: #ffd500 solid 5px;*/
     display: flex;
     justify-content: center;
     height: auto;
@@ -1682,7 +1607,6 @@ footer a i {
 
 
 .Beheersectionarticleproject {
-    /*border: #0037ff solid 5px;*/
     width: auto;
     display: flex;
     justify-content: center;
@@ -1722,7 +1646,6 @@ footer a i {
 
 
 .Beheertitelproject {
-    /*border: black solid 3px;*/
     height: 60%;
     display: flex;
     align-items: center;
@@ -1757,7 +1680,6 @@ footer a i {
 
 
 .Beheersectioncontactknop {
-    /*border: #0037ff solid 5px;*/
     width: auto;
 }
 
@@ -1774,7 +1696,6 @@ footer a i {
 
 
 .Beheerarticleknopcont {
-    /*border: #ff001e solid 3px;*/
     display: flex;
     justify-content: center;
 }
@@ -1817,7 +1738,6 @@ footer a i {
 
 
 .mainaanmakenproject {
-    /*border: #00ffc4 solid 5px;*/
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1833,7 +1753,6 @@ footer a i {
 
 .sectionpaginatitelprojectaanmaken {
     height: 90px;
-    /*border: #ffd500 solid 5px;*/
     display: flex;
     font-size: 200%;
     justify-content: center;
@@ -1848,7 +1767,6 @@ footer a i {
 }
 
 .articlepaginatitelaanmakenproject {
-    /*border: #ff001e solid 5px;*/
     display: flex;
     align-content: center;
     justify-content: center;
@@ -1863,7 +1781,6 @@ footer a i {
 }
 
 .algemenesectie {
-    /*border: #00ff04 solid 5px;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1880,7 +1797,6 @@ footer a i {
 }
 
 .invulveldentexten {
-    /*border: #ffd500 solid 5px;*/
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -1922,7 +1838,6 @@ footer a i {
 
 
 .toevoegenafbeeldingen {
-    /*border: #ff0099 solid 5px;*/
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -1936,16 +1851,12 @@ footer a i {
 
 
 .projectopslaan {
-    /*border: #ff0099 solid 5px;*/
     margin-bottom: 15px;
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
 
-.knopcontainer {
-    /*border: #00ff04 solid 5px;*/
-}
 
 .knopop {
     border: black solid 3px;

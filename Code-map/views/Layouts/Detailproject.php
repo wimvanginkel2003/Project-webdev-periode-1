@@ -34,7 +34,7 @@
                     <div class="articleknopcontact">
 
                         <!-- Knop naar contact pagina -->
-                        <a  class="knopcontactpagina" href="">Contact pagina</a>
+                        <a  class="knopcontactpagina" href="/contact">Contact pagina</a>
 
                     </div>
 
