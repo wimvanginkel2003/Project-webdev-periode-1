@@ -1,20 +1,23 @@
 <?php
+
 ob_start();
 
-require __DIR__ . '/DBverbinding.php';
+//        Deze functie zorgt aan de hand van de ID dat de juiste content uit de database word gehaald en vervolgens word ingeladen in de input velden//
 
-if (isset($params['id'])) {
+        require __DIR__ . '/DBverbinding.php';
 
-    $id = (int)$params['id'];
+        if (isset($params['id'])) {
 
-    $sql = ("SELECT Paginatitel, Toelichting FROM Portfolio_projecten WHERE id = :id");
-    $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-    $stmt->execute();
+            $id = (int)$params['id'];
 
-    $inputpagina = $stmt->fetch(PDO::FETCH_ASSOC);
+            $sql = ("SELECT Paginatitel, Toelichting FROM Portfolio_projecten WHERE id = :id");
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+            $stmt->execute();
 
-}
+            $inputpagina = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        }
 
 
 
@@ -28,7 +31,9 @@ require __DIR__ . '/../views/Layouts/Footer.html';
 
 
 
-//dit code blok zorgt ervoor dat de datbase word geupdate, moet even een verscil worden gemaakt tussen delete en update//
+//dit code blok zorgt ervoor dat een project pagina word geupdate of word verwijderd//
+// vervolgens word deze persoon naar de portfolio pagina gestuurd zodat hij kan checken of zijn
+// update zo is als hij wil en in het geval hij een pagina heeft verwijderd kan hij checken of deze verwijderd is //
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -41,8 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $Titelpagina = $_POST["Titelpagina"];
                     $Toelichting = $_POST["Toelichting"];
                     $id = $_POST['id'];
-
-                    var_dump($Titelpagina, $Toelichting, $id);
 
 
                     $stmt = $conn->prepare("UPDATE Portfolio_projecten SET Paginatitel = :Paginatitel, Toelichting = :Toelichting WHERE ID = :id");

@@ -3,6 +3,11 @@
 
 require __DIR__ . '/DBverbinding.php';
 
+//dit code blok zorgt ervoor dat de informatie die iemand invult om een pagina te maken naar de database word gestuurd, vervolgens
+// word deze persoon naar de portfolio pagina gestuurd zodat hij kan checken of het klopt //
+
+
+
 if (isset($params['id'])) {
 
     $id = (int)$params['id'];

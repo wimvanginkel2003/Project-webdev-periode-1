@@ -13,6 +13,8 @@ require __DIR__ . '/../views/Layouts/Header.html';
 require __DIR__ . '/../views/Layouts/Aanmakenportfolio.php';
 require __DIR__ . '/../views/Layouts/Footer.html';
 
+//dit code blok zorgt ervoor dat de informatie die iemand invult om een pagina te maken naar de database word gestuurd, vervolgens
+// word deze persoon naar de portfolio pagina gestuurd zodat hij kan checken of het klopt //
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

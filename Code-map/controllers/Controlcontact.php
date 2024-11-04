@@ -10,6 +10,10 @@ require __DIR__ . '/../views/Layouts/Footer.html';
 
 require __DIR__ . '/DBverbinding.php';
 
+
+//dit code blok zorgt ervoor dat de informatie die een bezoeker invult, in de database terecht komt//
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Naam = $_POST["Naam"];
     $Email = $_POST["Email"];

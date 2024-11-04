@@ -2,6 +2,8 @@
 
 require __DIR__ . '/DBverbinding.php';
 
+//dit code blok haalt informatie uit de database om een sectie te maken op de portfolio beheerspagina//
+
 
 $sql = "SELECT ID, Paginatitel From Portfolio_projecten;";
 $stmt = $conn->prepare($sql);
